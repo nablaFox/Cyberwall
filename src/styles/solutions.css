@@ -1,0 +1,125 @@
+.solutions { padding: 50px 0 }
+
+.solutions-grid { 
+    padding: 50px 0;
+    overflow-x: hidden;
+}
+
+.solutions-grid-wrapper { padding: 0 10px 40px 10px!important }
+
+.solutions .grid-row {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+.solutions .grid-row > * {
+    position: relative;
+    height: 400px;
+}
+
+.solution-1 {
+    width: 70%;
+    margin: 25px 0px;
+}
+
+.solution-2 {
+    width: 40%;
+    margin: 10% 15% 0 0;
+}
+
+.solution-3 {
+    width: 40%;
+    margin-top: 85px;
+}
+
+.solution-bg {
+    position: absolute;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    display: block;
+    width: 100%;
+    height: 100%;
+}
+
+.solution-1 .solution-bg { background-image: url('../assets/img/a.jpg'); }
+.solution-2 .solution-bg { background-image: url('../assets/img/b.jpg'); }
+.solution-3 .solution-bg { background-image: url('../assets/img/c.jpg'); }
+
+
+.solution-blob {
+    position: absolute;
+    background-image: url(../assets/img/blob.svg);
+    top: -35px;
+    right: -84px;
+    width: 369px;
+    height: 285px;
+    z-index: 1;
+}
+
+.solution-3 .solution-blob {
+    top: unset;
+    bottom: -80px;
+    right: -20px;
+}
+
+.solution-content {
+    position: absolute;
+    text-align: right;
+    left: 95%;
+    top: 40px;
+    transform: translateX(-50%);
+    width: 320px;
+    z-index: 2;
+}
+
+.solution-3 .solution-content {
+    left: unset;
+    top: unset;
+    transform: unset;
+    right: 5%;
+    bottom: 20px;
+}
+
+.solution-header {
+    text-transform: uppercase;
+    font-size: 14px;
+    font-weight: 300;
+    letter-spacing: 3px;
+    margin-bottom: 10px;
+}
+
+.solution-title {
+    font-size: 30px;
+    font-weight: 600;
+}
+
+.solutions-view-link {
+    position: absolute;
+    font-weight: 600;
+    bottom: 0;
+    right: 22px;
+    font-size: 20px;
+    z-index: 0;
+}
+
+.solutions-view-link:after {
+    content: "";
+    position: absolute;
+    left: 0;
+    bottom: -6px;
+    width: 100%;
+    height: 3px;
+    background: linear-gradient(to right,#7f00ff 0%,#e100ff 100%);
+    transition: height .3s ease;
+}
+
+.solutions-view-link:hover:after { height: 35px }
+
+.solutions-view-link span {
+    position: relative;
+    padding: 5px 10px;
+    z-index: 1;
+}
