@@ -1,0 +1,73 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  --section-max-width: 1220px;
+  --section-padding: 0 20px;
+  --section-gap: 100px;
+}
+
+@layer base {
+  *,
+  *::before,
+  *::after {
+    @apply relative
+  }
+
+  img { @apply pointer-events-none }
+  svg { @apply inline-block }
+}
+
+@layer components {
+  .p-page {
+    padding: var(--section-padding);
+  }
+
+  .section {
+    @apply mx-auto p-page;
+    max-width: var(--section-max-width);
+    margin-top: var(--section-gap);
+  }
+
+  .veiled {
+    @apply opacity-0 invisible;
+    transition: opacity 0.25s, visibility 0.25s;
+    transition-duration: 400ms;
+  }
+
+  .unveiled {
+    @apply opacity-100 visible;
+  }
+
+  .pseudo {
+    @apply content-[""] absolute;
+  }
+
+  .purple-to-pink {
+    @apply bg-gradient-to-r from-purple-1 to-pink-1;
+  }
+
+  .pink-to-blue {
+    @apply bg-gradient-to-r from-pink-3 to-blue-3;
+  }
+
+  .green-to-blue {
+    @apply bg-gradient-to-r from-green-2 to-blue-1;
+  }
+
+  .pink-to-orange {
+    @apply bg-gradient-to-r from-pink-2 to-orange-2
+  }
+
+  .text-bg {
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+  }
+
+  .text-bg-outlined {
+    @apply text-bg;
+    -webkit-text-stroke: 5px transparent;
+    -webkit-text-fill-color: theme('colors.purple.DEFAULT')!important;
+  }
+}

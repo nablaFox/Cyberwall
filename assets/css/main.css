@@ -1,0 +1,17 @@
+@import 'aos/dist/aos.css';
+
+body {
+  @apply bg-purple text-white;
+  height: 200vh;
+}
+
+@font-face {
+  font-family: 'Sol-Medium';
+  src: url('../fonts/SolMedium.woff');
+}
+
+[data-aos=fade-up] {
+  -webkit-transform: translate3d(0,30px,0);
+  transform: translate3d(0,30px,0);
+  opacity: 0
+}

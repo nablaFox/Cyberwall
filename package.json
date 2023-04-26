@@ -1,29 +1,24 @@
 {
-    "name": "cyberwall",
-    "version": "1.0.0",
-    "scripts": {
-        "build": "webpack --progress --node-env production",
-        "watch": "webpack -w --node-env development --devtool=source-map"
-    },
-    "dependencies": {
-    },
-    "devDependencies": {
-        "css-loader": "^6.7.2",
-        "html-webpack-plugin": "^5.5.0",
-        "mini-css-extract-plugin": "^2.6.1",
-        "sass": "^1.56.1",
-        "sass-loader": "^13.2.0",
-        "style-loader": "^3.3.1",
-        "webpack-cli": "^4.10.0"
-    },
-    "repository": {
-        "type": "git",
-        "url": "git+https://github.com/nablaFox/Cyberwall.git"
-    },
-    "author": "",
-    "license": "ISC",
-    "bugs": {
-        "url": "https://github.com/nablaFox/Cyberwall/issues"
-    },
-    "homepage": "https://github.com/nablaFox/Cyberwall#readme"
+  "name": "nuxt-app",
+  "private": true,
+  "scripts": {
+    "build": "nuxt build",
+    "dev": "nuxt dev",
+    "generate": "nuxt generate",
+    "preview": "nuxt preview",
+    "postinstall": "nuxt prepare"
+  },
+  "devDependencies": {
+    "@nuxtjs/google-fonts": "^3.0.0",
+    "@nuxtjs/tailwindcss": "^6.6.6",
+    "@types/node": "^18",
+    "nuxt": "^3.4.2",
+    "sass": "^1.62.0"
+  },
+  "dependencies": {
+    "@types/aos": "^3.0.4",
+    "@vueuse/core": "^10.1.0",
+    "aos": "^2.3.4",
+    "nuxt-swiper": "^1.1.0"
+  }
 }
