@@ -9,3 +9,11 @@ export interface NavItemWithChildren {
   text: string
   items: NavItemWithLink[]
 }
+
+export interface FooterGroup {
+  title: string
+  items: {
+    text: string
+    link?: string
+  }[]
+}

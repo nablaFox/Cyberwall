@@ -7,7 +7,7 @@ const props = defineProps<{
   cta?: string
 }>()
 
-const { default: imageUrl } = await import(`~/assets/images/${props.image}.jpg`)
+const { src: imageUrl } = await useAsset(props.image)
 </script>
 
 <template>
@@ -18,6 +18,8 @@ const { default: imageUrl } = await import(`~/assets/images/${props.image}.jpg`)
         class="blob-img object-cover w-full aspect-[1/1]"
         data-aos="fade-in" 
       />
+
+      <BlobClip />
     </template>
 
     <template #right>
@@ -46,9 +48,12 @@ const { default: imageUrl } = await import(`~/assets/images/${props.image}.jpg`)
       >
         {{ cta || 'Discover More' }}
       </Button>
-    </template>
-  </DuplexSection>
 
+      <slot name="content" />
+    </template>
+
+    <slot />
+  </DuplexSection>
 </template>
 
 <style scoped lang="postcss">
@@ -63,13 +68,9 @@ const { default: imageUrl } = await import(`~/assets/images/${props.image}.jpg`)
   lg:mb-0 lg:-ml-[200px] lg:mr-[30px]
 }
 
-.blob-img {
-  clip-path: url('~/assets/images/blob-5.svg#clip');
-}
+.blob-clip { @apply absolute w-0 h-0 }
 
-.section {
-  @apply mb-[500px]
-}
+.blob-img { clip-path: url('#clip') }
 
 .btn { transition: all }
 </style>

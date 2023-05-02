@@ -23,10 +23,7 @@ defineProps<ServiceSection>()
 </template>
 
 <style scoped lang="postcss">
-:deep(.service) { 
-  @apply mt-[75px];
-  &:not(:last-child) { @apply mb-[120px] }
-}
+:deep(.service) { @apply mt-[75px] mb-[120px] }
 
 :deep(.section-wrapper) {
   @apply flex flex-wrap justify-between items-center max-w-[1040px] mx-auto pt-5

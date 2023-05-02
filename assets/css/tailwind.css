@@ -66,7 +66,7 @@
   }
 
   .text-bg-outlined {
-    @apply text-bg;
+    @apply text-bg pl-1;
     -webkit-text-stroke: 5px transparent;
     -webkit-text-fill-color: theme('colors.purple.DEFAULT')!important;
   }

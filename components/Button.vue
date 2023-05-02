@@ -2,7 +2,7 @@
 const props = defineProps<{
   href?: string
   theme?: 'outlined' | 'waterfall'
-  size?: 'medium' | 'big'
+  size?: 'small' | 'medium' | 'big'
 }>()
 
 const as = computed(() => props.href ? 'a' : 'button')
@@ -28,6 +28,10 @@ const as = computed(() => props.href ? 'a' : 'button')
 .btn.outlined { @apply bg-transparent hover:bg-purple-1 }
 
 .btn.big { @apply px-11 py-[15px] }
+
+.btn.small {
+  @apply px-5 py-[10px] text-[12px]
+}
 
 .btn.waterfall {
   &::after {

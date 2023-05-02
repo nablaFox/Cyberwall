@@ -15,9 +15,9 @@
 
     <SolutionSection
       :solutions="[
-        { headline: 'Web Development', name: 'Web Development', image: 'cyberwall-app', blob: 'top-right' },
-        { headline: 'Web Development', name: 'Bespoke Shopify Theme', image: 'cyberwall-app', blob: 'top-right' },
-        { headline: 'Web Development', name: 'Web Development', image: 'cyberwall-app', blob: 'bottom-right' }
+        { headline: 'Web Development', name: 'Web Development', image: 'cyberwall-app.jpg', blob: 'top-right' },
+        { headline: 'Web Development', name: 'Bespoke Shopify Theme', image: 'cyberwall-app.jpg', blob: 'top-right' },
+        { headline: 'Web Development', name: 'Web Development', image: 'cyberwall-app.jpg', blob: 'bottom-right' }
       ]"
     />
 
@@ -31,17 +31,31 @@
       ]"
     />
 
-    <AboutHomeSection
+    <AboutSection
       title="2015"
       heading="We started as a small team of developers"
-      image="coding"
+      image="cyberwall-app.jpg"
       link="/"
     >
       We passionately believe that technology, specifically cloud connected technology, is here to help – not hinder – us. This is the foundation upon which Adapt was formed in February 2015. Since then, we have been imagining creative ways to solve an infinite variety of problems for an ever expanding portfolio of clients. 
-    </AboutHomeSection>
+    </AboutSection>
+
+    <TeamSection 
+      title="Our Team"
+      :slides="[
+        { text: 'Ciao ciao', image: 'cyberwall-app.jpg', link: '/' },
+        { text: 'Ciao ciao', image: 'cyberwall-app.jpg', link: '/' },
+        { text: 'Ciao ciao', image: 'cyberwall-app.jpg', link: '/' },
+        { text: 'Ciao ciao', image: 'cyberwall-app.jpg', link: '/' },
+        { text: 'Ciao ciao', image: 'cyberwall-app.jpg', link: '/' },
+        { text: 'Ciao ciao', image: 'cyberwall-app.jpg', link: '/' },
+        { text: 'Ciao ciao', image: 'cyberwall-app.jpg', link: '/' },
+        { text: 'Ciao ciao', image: 'cyberwall-app.jpg', link: '/' },
+        { text: 'Ciao ciao', image: 'cyberwall-app.jpg', link: '/' },
+        { text: 'Ciao ciao', image: 'cyberwall-app.jpg', link: '/' },
+        { text: 'Ciao ciao', image: 'cyberwall-app.jpg', link: '/' }
+      ]"
+    />
   </div>
   
 </template>
-
-<style scoped lang="postcss">
-</style>

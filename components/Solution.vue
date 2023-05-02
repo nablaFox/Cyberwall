@@ -8,7 +8,7 @@ export interface Solution {
 }
 
 const props = defineProps<Solution>()
-const { default: solutionUrl } = await import(`~/assets/images/${props.image}.jpg`)
+const { src: solutionUrl } = await useAsset(props.image)
 </script>
 
 <template>

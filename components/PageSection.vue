@@ -4,6 +4,7 @@ export interface PageSection {
   gradient?: string
   headline?: string
   titleAnimation?: string
+  fullWidth?: boolean
 }
 
 const props = defineProps<PageSection>()
@@ -19,7 +20,10 @@ const titleParts = computed(() => {
 </script>
 
 <template>
-  <section class="section">
+  <section 
+    class="section"
+    :class="[fullWidth && 'max-w-full p-0']"
+  >
     <div class="section-top">
       <h4
         v-if="headline"
@@ -47,3 +51,8 @@ const titleParts = computed(() => {
     </div>
   </section>
 </template>
+
+<style scoped lang="postcss">
+.section:last-child { @apply mb-[150px] }
+span { background: inherit }
+</style>

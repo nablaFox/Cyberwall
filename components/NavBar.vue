@@ -4,6 +4,8 @@ import type { NavItem } from '@/types'
 defineProps<{ 
   items: NavItem[]
   isScreenOpen: boolean 
+  brand: string
+  logo?: string
 }>()
 
 defineEmits<{
@@ -14,8 +16,8 @@ defineEmits<{
 <template>
   <div class="section !my-0 py-5 flex justify-between items-center">
     <NuxtLink to="/" class="flex items-center gap-3">
-      <img src="~/assets/images/logo.svg" alt="logo" width="65">
-      <div class="font-sol text-2xl"> Cyberwall </div>
+      <img v-if="logo" :src="logo" alt="logo" width="65">
+      <div class="font-sol text-2xl"> {{ brand }} </div>
     </NuxtLink>
 
     <nav class="hidden md:flex gap-5 px-7 font-thin">
