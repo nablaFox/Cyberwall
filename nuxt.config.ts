@@ -3,6 +3,7 @@ export default defineNuxtConfig({
   modules: [
     '@nuxtjs/tailwindcss',
     '@nuxtjs/google-fonts',
+    '@nuxt/content',
   ],
   app: {
     pageTransition: { name: 'fade', mode: 'out-in' }
@@ -16,5 +17,8 @@ export default defineNuxtConfig({
     compilerOptions: {
       isCustomElement: tag => tag.startsWith('swiper-')
     }
+  },
+  content: {
+    documentDriven: true
   }
 })

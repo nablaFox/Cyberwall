@@ -3,7 +3,7 @@ export interface Solution {
   headline: string
   name: string
   image: string
-  blob: 'top-right' | 'bottom-right' | 'bottom-left'
+  blob?: 'top-right' | 'bottom-right' | 'bottom-left'
   type?: 'full-width'
 }
 
@@ -13,7 +13,7 @@ const { src: solutionUrl } = await useAsset(props.image)
 
 <template>
   <div 
-    :class="[blob, type]"
+    :class="[blob || 'top-right', type]"
     class="solution max-w-[800px] relative" 
     data-aos="fade-in"
     data-aos-duration="600"

@@ -1,6 +1,6 @@
 <script setup lang="ts">
-import type { Service } from './Service.vue'
-import type { PageSection } from './PageSection.vue'
+import type { Service } from '../Service.vue'
+import type { PageSection } from '../PageSection.vue'
 
 interface ServiceSection extends PageSection {
   services: Service[]

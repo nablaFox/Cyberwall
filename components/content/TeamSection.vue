@@ -1,5 +1,5 @@
 <script setup lang="ts">
-import type { PageSection } from './PageSection.vue'
+import type { PageSection } from '../PageSection.vue'
 
 interface Slide {
   text: string
@@ -43,9 +43,9 @@ const imageUrls = await Promise.all(
           <div class="z-[1] w-[90%] left-1/2 -translate-x-2/4 text-center absolute bottom-8">
             <h3 class="my-8 font-bold text-3xl"> {{ slide.text }} </h3>
            
-            <Button size="big" :href="slide.link"> 
+            <CwButton size="big" :href="slide.link"> 
               Read More 
-            </Button>
+            </CwButton>
           </div>
         </swiper-slide>
       </swiper-container>

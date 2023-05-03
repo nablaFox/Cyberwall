@@ -2,9 +2,10 @@
 
 module.exports = {
   content: [
-    `./components/**/*.{vue,js,ts}`,
-    `$./layouts/**/*.vue`,
-    `$./pages/**/*.vue`,
+    'components/**/*.{vue,js,ts}',
+    'layouts/**/*.vue',
+    'pages/**/*.vue',
+    'content/**/*.md'
   ],
   theme: {
     fontFamily: {

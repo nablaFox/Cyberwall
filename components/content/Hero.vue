@@ -1,8 +1,5 @@
 <script setup lang="ts">
-interface CTA {
-  text: string
-  link: string
-}
+import type { CTA } from '@/types'
 
 defineProps<{
   cta: CTA[]
@@ -21,16 +18,16 @@ defineProps<{
       class="font-bold text-center text-2xl xs:text-3xl sm:text-[40px] sm:leading-[56px] md:text-5xl"
       data-aos="fade-up" 
     > 
-      <slot name="title" />
+      <slot />
     </h1>
 
     <div class="hero-buttons flex flex-col gap-4 sm:flex-row sm:gap-8 justify-center">
-      <Button :href="cta[0].link"> 
+      <CwButton :href="cta[0].link"> 
         {{ cta[0].text }} 
-      </Button>
-      <Button theme="outlined" :href="cta[1].link"> 
+      </CWButton>
+      <CwButton theme="outlined" :href="cta[1].link"> 
         {{ cta[1].text }} 
-      </Button>
+      </CwButton>
     </div>
 
     <Scroller class="absolute bottom-14"/>

@@ -45,7 +45,9 @@ const logo = (await useAsset('logo.svg')).src
     :logo="logo"
     :nav-items="navItems"
   />
-  <NuxtPage />
+  <main class="overflow-hidden">
+    <slot />
+  </main>
   <Footer
     slogan="a cyber security center"
     :brand="brand"
@@ -53,8 +55,7 @@ const logo = (await useAsset('logo.svg')).src
     :logo="logo"
     copyright="© 2023 Adapt Digital Ltd. All rights reserved"
     legalWritings="Adapt Digital Ltd is a company registered in England and Wales. Company number: 12345678"
-  >
-  </Footer>
+  />
 </template>
 
 <style>

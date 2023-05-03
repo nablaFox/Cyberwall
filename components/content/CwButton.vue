@@ -12,7 +12,7 @@ const as = computed(() => props.href ? 'a' : 'button')
   <component 
     class="btn" 
     :class="[theme, size]"
-    :is="as as any" 
+    :is="(as as any)" 
     :href="props.href" 
   >
     <slot />

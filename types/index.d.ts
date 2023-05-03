@@ -17,3 +17,8 @@ export interface FooterGroup {
     link?: string
   }[]
 }
+
+export interface CTA {
+  text: string
+  link: string
+}
