@@ -1,0 +1,54 @@
+brand: Cyberwall
+slogan: A Cyber Security Center
+logo: logo.svg
+copyright: © 2023 Cyberwall Srl - Tutti i diritti riservati
+legalWritings: "Cyberwall Srl è una impresa registrata in Italia. Codice Fiscale: 12345678"
+
+navItems:
+  - text: Home
+    link: /
+  - text: Chi Siamo
+    link: /about
+  - text: Solutioni
+    items: 
+      - text: soluzione
+        link: /solutions/1
+      - text: soluzione
+        link: /solutions/1
+      - text: soluzione
+        link: /solutions/1
+  - text: Il team
+    link: /pcto
+  - text: Contatti
+    items:
+      - text: Posizione
+        link: /contacts/1
+      - text: Supporto
+        link: /contacts/2
+
+footerItems:
+  - title: Contatti
+    items:
+      - text: Cyberwall Srl
+      - text: Via Veneto, 4
+      - text: Pescara, PE
+      - text: 65010
+  - title: Connettiti
+    items:
+      - text: hello@cyberwall.com
+        link: /
+      - text: 01252 123456
+        link: /
+  - title: Informazioni
+    items:
+      - text: Termini e Condizioni
+        link: /
+      - text: Privacy Policy
+        link: /
+      - text: Cookie Policy
+        link: /
+      - text: Accessibilità
+        link: /
+      - text: Sitemap
+        link: /
+      

@@ -9,6 +9,7 @@ interface Slide {
 
 interface TeamSection extends PageSection {
   slides: Slide[]
+  button?: string
 }
 
 const props = defineProps<TeamSection>()
@@ -44,7 +45,7 @@ const imageUrls = await Promise.all(
             <h3 class="my-8 font-bold text-3xl"> {{ slide.text }} </h3>
            
             <CwButton size="big" :href="slide.link"> 
-              Read More 
+              {{ button ?? 'Scopri' }}
             </CwButton>
           </div>
         </swiper-slide>

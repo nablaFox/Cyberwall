@@ -19,6 +19,13 @@ export default defineNuxtConfig({
     }
   },
   content: {
-    documentDriven: true
+    documentDriven: {
+      globals: {
+        theme: {
+          where: [{ _id: 'content:_theme.yml'}],
+          without: ['_']
+        }
+      }
+    }
   }
 })

@@ -1,0 +1,11 @@
+{
+  "hosting": {
+    "public": ".output/public",
+    "site": "cyberwall-srl",
+    "ignore": [
+      "firebase.json",
+      "**/.*",
+      "**/node_modules/**"
+    ]
+  }
+}

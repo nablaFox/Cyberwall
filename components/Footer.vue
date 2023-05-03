@@ -15,7 +15,7 @@ defineProps<{
   <footer class="section mt-0">
     <div class="flex-wrap flex items-start w-full justify-between border-b border-grey">
       <div class="flex items-center mb-10"> 
-        <img v-if="logo" :src="logo" alt="logo" class="w-[90px] h-[90px]" />
+        <img v-if="logo" :src="logo" alt="logo" class="w-[90px] h-[90px] object-cover" />
         <div class="h-full ml-3">
           <div class="font-sol text-3xl"> 
             {{ brand }} 
@@ -53,7 +53,7 @@ defineProps<{
       </div>
     </div>
 
-    <div class="mb-8 mt-10 flex text-xs justify-between text-grey-1">
+    <div class="pb-8 mt-10 flex text-xs justify-between text-grey-1">
       <div class="max-w-[400px]"> {{ legalWritings }} </div>
       <div> {{ copyright }} </div>
     </div>

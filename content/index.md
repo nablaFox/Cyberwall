@@ -5,82 +5,80 @@ title: Cyberwall | Home
 ::hero
 ---
 cta:
-- text: Find out more
+- text: Scopri di più
   link: "/"
-- text: Find out more
+- text: Le nostre soluzioni
   link: "/"
 ---
 
-We create bespoke software for established businesses to increase operational efficiency
+Proteggiamo la tua azienda dalle minacce informatiche. Affidati alla nostra cybersecurity
 ::
 
 ::solution-section
 ---
 solutions:
-- headline: Web Development
-  name: Web DEvelopment
+- headline: Lorem ipsum dolor
+  name: Prima Solutione
   image: cyberwall-app.jpg
 
-- headline: Web Development
-  name: Web DEvelopment
-  image: cyberwall-app.jpg
-  blob: bottom-right
+- headline: Lorem ipsum dolor
+  name: Seconda Soluzione
+  image: coding.jpg
 
-- headline: Web Development
-  name: Web DEvelopment
-  image: cyberwall-app.jpg
+- headline: Lorem ipsum dolor
+  name: Terza Soluzione
+  image: security-key.jpg
   blob: bottom-right
 
 cta: 
-  text: view all
+  text: Vedi tutte
   link: /
 ---
 ::
 
 ::service-section
 ---
-title: Who we are
+title: servizi affidabili
 services:
 - name: Web Development
   blob: 1
   icon: Web
-  description: We create bespoke software for established businesses to increase operational efficiency
+  description: Offriamo un servizio di web development personalizzato e altamente performante. Siamo pronti a realizzare un sito web in grado di soddisfare le tue esigenze e quelle dei tuoi clienti, garantendoti sicurezza e affidabilità.
 
-- name: Web Development
+- name: Software Development
   blob: 2
   icon: TabletHand
-  description: We create bespoke software for established businesses to increase operational efficiency
+  description: La nostra azienda di cybersecurity è in grado di sviluppare piattaforme software personalizzate e sicure, adatte alle tue esigenze. Grazie alla nostra esperienza e alle tecnologie all'avanguardia, possiamo realizzare il software che fa per te.
 
-- name: Web Development
+- name: Patch Management
   blob: 3
   icon: Website
-  description: We create bespoke software for established businesses to increase operational efficiency
+  description: Non perdere più tempo a cercare gli aggiornamenti per il tuo software. Lascia che la nostra azienda si occupi di tutto, dal rilevamento delle vulnerabilità alla gestione delle patch. Rimani sempre al passo con le ultime novità e proteggi i tuoi sistemi.
 
-- name: Web Development
+- name: Protezione e monitoraggio
   blob: 4
-  icon: Website
-  description: We create bespoke software for established businesses to increase operational efficiency
+  icon: Chats
+  description: Proteggere i tuoi dati è la nostra priorità. Grazie ai nostri servizi di protezione e monitoraggio, saremo in grado di individuare eventuali minacce in tempo reale e di intervenire prontamente per limitare i danni.
 ---
 ::
 
 ::about-section
 ---
-title: '2015'
-heading: We started as small team of developers
+title: '2018'
+heading: A partire da un piccolo team di sviluppatori...
 image: cyberwall-app.jpg
 
 cta:
-  text: Discover more
+  text: Leggi di più
   link: /
 ---
 
-We passionately believe that technology, specifically cloud connected technology, is here to help – not hinder – us. This is the foundation upon which Adapt was formed in February 2015. Since then, we have been imagining creative ways to solve an infinite variety of problems for an ever expanding portfolio of clients.
+Siamo diventati un'azienda leader nel settore della cybersecurity. La nostra passione per la sicurezza informatica ci spinge a offrire soluzioni di protezione avanzate per le imprese di tutte le dimensioni. Affidati alla nostra esperienza per proteggere i tuoi dati e la tua attività.
 ::
 
 ::team-section
 ---
-title: Our Team
-gradient: green-to-blue
+title: Il team
 slides:
   - text: Test text text
     image: cyberwall-app.jpg
@@ -116,8 +114,4 @@ slides:
     image: cyberwall-app.jpg
     link: /
 ---
-::
-
-::div{.w-full .bg-green .p-4}
-Another way to use it!
 ::

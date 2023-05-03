@@ -53,7 +53,7 @@ const solutionCount = computed(() => props.solutions.length)
       :href="cta.link"
       :class="[
         solutionCount < 3 && 'left-5 bottom-0',
-        solutionCount === 3 && '-bottom-9 right-6',
+        solutionCount === 3 && '-bottom-9 right-4',
         solutionCount === 4 && '-bottom-3 right-7'
       ]"
       theme="waterfall"
