@@ -1,0 +1,4 @@
+body {
+  @apply bg-purple text-white;
+  height: 200vh;
+}

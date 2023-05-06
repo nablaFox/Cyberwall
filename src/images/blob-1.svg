@@ -1,0 +1,17 @@
+<svg width="184px" height="181px" viewBox="0 0 184 181" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+  <defs>
+		<linearGradient x1="102.372411%" y1="50%" x2="-2.22044605e-14%" y2="50%" id="linearGradient-1">
+			<stop stop-color="#11998E" offset="0%"></stop>
+			<stop stop-color="#38EF7D" offset="100%"></stop>
+		</linearGradient>
+  </defs>
+  <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+		<g id="Home---video-blob" transform="translate(-935.000000, -2239.000000)" fill="url(#linearGradient-1)" fill-rule="nonzero">
+			<g id="Services" transform="translate(-609.000000, 1965.000000)">
+				<g id="Websites" transform="translate(1356.500000, 274.000000)">
+					<path d="M359.329943,4.82115677 C373.469985,16.4401008 369.706475,48.4997796 365.028971,84.9703538 C360.405231,121.440928 354.867496,162.322398 332.447734,176.200581 C310.081736,190.132555 270.833711,177.007452 241.048224,157.534962 C211.316501,138.062473 191.10108,112.188806 189.165561,86.9068445 C187.176277,61.624883 203.413131,36.934627 221.746798,24.2936463 C240.080464,11.7064569 260.564707,11.1685428 286.801743,6.54248181 C313.092543,1.86262936 345.189901,-6.85157864 359.329943,4.82115677 Z" id="Path" transform="translate(279.127500, 90.500000) rotate(-270.000000) translate(-279.127500, -90.500000) "></path>
+				</g>
+			</g>
+		</g>
+  </g>
+</svg>
