@@ -9,7 +9,7 @@ import NotFound from './components/NotFound.vue'
 </script>
 
 <template>
-  <div v-if="frontmatter.layout !== false" class="layout">
+  <div v-if="frontmatter.layout !== false" class="layout overflow-hidden">
     <Header />
     <NotFound v-if="page.isNotFound" />
     <Home v-else-if="frontmatter.layout === 'home'" />

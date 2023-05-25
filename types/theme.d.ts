@@ -8,9 +8,11 @@ export interface Config {
 
 export type NavItem = NavItemWithLink | NavItemWithChildren
 
+export interface CTA extends NavItemWithLink {}
+
 export interface NavItemWithLink {
   text: string
-  link: string
+  link?: string
 }
 
 export interface NavItemWithChildren {
@@ -21,4 +23,5 @@ export interface NavItemWithChildren {
 export interface Footer {
   message?: string
   copyright?: string
+  items: NavItemWithChildren[]
 }
