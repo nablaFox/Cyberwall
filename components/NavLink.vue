@@ -9,7 +9,7 @@ defineProps<{
 <template>
   <NuxtLink 
     :to="item.link" 
-    class="nav-link"
+    class="nav-link capitalize"
   >
     {{ item.text }}
   </NuxtLink>

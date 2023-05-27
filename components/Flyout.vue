@@ -18,6 +18,7 @@ const open = ref(false)
       v-if="button"
       :aria-expanded="open"
       @click="open = !open"
+      class="capitalize"
     > 
       {{ button }}
     </button>

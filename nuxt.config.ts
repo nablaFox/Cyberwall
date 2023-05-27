@@ -6,7 +6,7 @@ export default defineNuxtConfig({
     '@nuxt/content',
   ],
   app: {
-    pageTransition: { name: 'fade', mode: 'out-in' }
+    pageTransition: { name: 'page', mode: 'out-in' }
   },
   googleFonts: {
     families: { 'Montserrat': [300, 400, 500, 600, 700] },
@@ -22,7 +22,7 @@ export default defineNuxtConfig({
     documentDriven: {
       globals: {
         theme: {
-          where: [{ _id: 'content:_theme.yml'}],
+          where: [{ _id: 'content:_theme.yml' }],
           without: ['_']
         }
       }

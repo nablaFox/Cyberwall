@@ -22,7 +22,7 @@ const titleParts = computed(() => {
 <template>
   <section 
     class="section"
-    :class="[fullWidth && 'max-w-full p-0']"
+    :class="{ 'full-width': fullWidth }"
   >
     <div class="section-top">
       <h4
@@ -55,4 +55,8 @@ const titleParts = computed(() => {
 <style scoped lang="postcss">
 .section:last-child { @apply mb-[150px] }
 span { background: inherit }
+
+.full-width {
+  @apply max-w-full p-0
+}
 </style>

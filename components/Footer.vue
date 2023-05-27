@@ -1,41 +1,33 @@
 <script setup lang="ts">
-import type { FooterGroup } from '@/types'
-
-defineProps<{
-  items: FooterGroup[]
-  brand: string
-  logo?: string
-  slogan?: string
-  copyright?: string
-  legalWritings?: string
-}>()
+const { theme } = useTheme()
+const logo = (await useAsset(theme.value.logo || '')).src
 </script>
 
 <template>
   <footer class="section mt-0">
     <div class="flex-wrap flex items-start w-full justify-between border-b border-grey">
       <div class="flex items-center mb-10"> 
-        <img v-if="logo" :src="logo" alt="logo" class="w-[90px] h-[90px] object-cover" />
+        <img v-if="theme.logo" :src="logo" alt="logo" class="w-[90px] h-[90px] object-cover" />
         <div class="h-full ml-3">
           <div class="font-sol text-3xl"> 
-            {{ brand }} 
+            {{ theme.title }} 
           </div>
           <div 
-            v-if="slogan" 
+            v-if="theme.description" 
             class="ml-3 mt-3 text-[14px] font-medium capitalize"
           > 
-            {{ slogan }} 
+            {{ theme.description }} 
           </div>
         </div>
       </div>
 
       <div
-        v-for="item in items"
-        :key="item.title"
+        v-for="item in theme.footer?.items"
+        :key="item.text"
         class="w-full sm:w-1/2 md:w-auto mb-5 "        
       >
         <h3 class="text-bg purple-to-pink uppercase font-medium mb-2"> 
-          {{ item.title }} 
+          {{ item.text }} 
         </h3>
 
         <div
@@ -54,8 +46,8 @@ defineProps<{
     </div>
 
     <div class="pb-8 mt-10 flex text-xs justify-between text-grey-1">
-      <div class="max-w-[400px]"> {{ legalWritings }} </div>
-      <div> {{ copyright }} </div>
+      <div class="max-w-[400px]"> {{ theme.footer?.message }} </div>
+      <div> {{ theme.footer?.copyright }} </div>
     </div>
   </footer>
 </template>

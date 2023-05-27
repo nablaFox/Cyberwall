@@ -1,54 +1,50 @@
-brand: Cyberwall
-slogan: A Cyber Security Center
+title: Cyberwall
+description: A Cyber Security Center
 logo: logo.svg
-copyright: © 2023 Cyberwall Srl - Tutti i diritti riservati
-legalWritings: "Cyberwall Srl è una impresa registrata in Italia. Codice Fiscale: 12345678"
 
-navItems:
-  - text: Home
+nav:
+  - text: home
     link: /
-  - text: Chi Siamo
+  - text: chi siamo
     link: /about
-  - text: Solutioni
-    items: 
-      - text: soluzione
-        link: /solutions/1
-      - text: soluzione
-        link: /solutions/1
-      - text: soluzione
-        link: /solutions/1
-  - text: Il team
+  - text: il team
     link: /pcto
-  - text: Contatti
+  - text: lavora con noi
+    link: /work-with-us
+  - text: showcase
+    link: /showcase
+  - text: contatti
     items:
-      - text: Posizione
+      - text: posizione
         link: /contacts/1
-      - text: Supporto
+      - text: supporto
         link: /contacts/2
 
-footerItems:
-  - title: Contatti
-    items:
-      - text: Cyberwall Srl
-      - text: Via Veneto, 4
-      - text: Pescara, PE
-      - text: 65010
-  - title: Connettiti
-    items:
-      - text: hello@cyberwall.com
-        link: /
-      - text: 01252 123456
-        link: /
-  - title: Informazioni
-    items:
-      - text: Termini e Condizioni
-        link: /
-      - text: Privacy Policy
-        link: /
-      - text: Cookie Policy
-        link: /
-      - text: Accessibilità
-        link: /
-      - text: Sitemap
-        link: /
-      
+footer:
+  message: 'Cyberwall Srl è una impresa registrata in Italia. Codice Fiscale: 12345678'
+  copyright: © 2023 Cyberwall Srl - Tutti i diritti riservati
+  items:
+    - text: Contatti
+      items:
+        - text: Cyberwall Srl
+        - text: Via Veneto, 4
+        - text: Pescara, PE
+        - text: 65010
+    - text: Connettiti
+      items:
+        - text: hello@cyberwall.com
+          link: /
+        - text: 01252 123456
+          link: /
+    - text: Informazioni
+      items:
+        - text: Termini e Condizioni
+          link: /
+        - text: Privacy Policy
+          link: /
+        - text: Cookie Policy
+          link: /
+        - text: Accessibilità
+          link: /
+        - text: Sitemap
+          link: /

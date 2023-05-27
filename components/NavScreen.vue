@@ -1,10 +1,9 @@
 <script setup lang="ts">
-import type { NavItem } from '@/types'
-
 defineProps<{ 
-  items: NavItem[]
   open: boolean 
 }>()
+
+const { theme } = useTheme()
 </script>
 
 <template>
@@ -13,13 +12,13 @@ defineProps<{
       v-if="open" 
       class="bg-purple font-thin z-10 fixed w-full p-page pt-1 flex flex-col gap-3 items-start !pb-6"
     >
-      <template v-for="item in items" :key="item.text">
-        <NavLink v-if="'link' in item" :item="item" />
+      <template v-for="item in theme.nav" :key="item.text">
         <NavLink 
-          v-else 
+          v-if="'items' in item"
           v-for="subItem in item.items" 
-          :item="subItem" 
+          :item="subItem"
         />
+        <NavLink v-else :item="item" />
       </template>
     </div>
   </Transition>

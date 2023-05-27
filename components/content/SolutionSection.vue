@@ -71,36 +71,5 @@ const solutionCount = computed(() => props.solutions.length)
 
 @media (max-width: theme('screens.lg')) {
   .solution { @apply w-full m-0 !mb-[50px] }
-  :deep(.blob) { @apply -z-[1] } 
-  :deep(.content) { transform: unset!important }
-
-  .solution::after {
-    @apply pseudo top-0 left-0 w-full h-full;
-  }
-
-  .top-right::after {
-    background-image: radial-gradient(circle at top 20px right 20px, theme('colors.purple.DEFAULT') 0%,transparent 100%)
-  }
-
-  .bottom-right::after {
-    background-image: radial-gradient(circle at bottom 20px right 20px, theme('colors.purple.DEFAULT') 0%,transparent 100%)
-  }
-
-  .bottom-left::after {
-    background-image: radial-gradient(circle at bottom 20px left 20px, theme('colors.purple.DEFAULT') 0%,transparent 100%)
-  }
-
-  .top-right,
-  .bottom-right {
-    :deep(.content) { @apply !right-5 !left-[unset] }
-  }
-
-  .bottom-right :deep(.blob) {
-    @apply !-bottom-[50px] -right-[35px]
-  }
-
-  .bottom-left :deep(.blob) {
-    @apply !-bottom-1/4 -left-[50px]
-  }
 }
 </style>
