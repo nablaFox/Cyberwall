@@ -1,6 +1,6 @@
 <script setup lang="ts">
 import type { Solution } from '../Solution.vue'
-import type { PageSection } from '../PageSection.vue'
+import type { PageSection } from './PageSection.vue'
 import type { CTA } from '@/types'
 
 interface SolutionSection extends PageSection {

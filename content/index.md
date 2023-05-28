@@ -41,22 +41,25 @@ cta:
 title: servizi affidabili
 services:
 - name: Web Development
-  blob: 1
+  blob: blob-1.svg
   icon: Web
   description: Offriamo un servizio di web development personalizzato e altamente performante. Siamo pronti a realizzare un sito web in grado di soddisfare le tue esigenze e quelle dei tuoi clienti, garantendoti sicurezza e affidabilità.
 
 - name: Software Development
-  blob: 2
+  blob: blob-2.svg
+  blobPos: 2
   icon: TabletHand
   description: La nostra azienda di cybersecurity è in grado di sviluppare piattaforme software personalizzate e sicure, adatte alle tue esigenze. Grazie alla nostra esperienza e alle tecnologie all'avanguardia, possiamo realizzare il software che fa per te.
 
 - name: Patch Management
-  blob: 3
+  blob: blob-3.svg
+  blobPos: 3
   icon: Website
   description: Non perdere più tempo a cercare gli aggiornamenti per il tuo software. Lascia che la nostra azienda si occupi di tutto, dal rilevamento delle vulnerabilità alla gestione delle patch. Rimani sempre al passo con le ultime novità e proteggi i tuoi sistemi.
 
 - name: Protezione e monitoraggio
-  blob: 4
+  blob: blob-4.svg
+  blobPos: 4
   icon: Chats
   description: Proteggere i tuoi dati è la nostra priorità. Grazie ai nostri servizi di protezione e monitoraggio, saremo in grado di individuare eventuali minacce in tempo reale e di intervenire prontamente per limitare i danni.
 ---

@@ -1,7 +1,7 @@
 <template>
   <div>
     <Header />
-    <main class="overflow-hidden">
+    <main class="overflow-hidden min-h-screen">
       <slot />
     </main>
     <Footer />

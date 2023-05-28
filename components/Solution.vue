@@ -7,8 +7,7 @@ export interface Solution {
   type?: 'full-width'
 }
 
-const props = defineProps<Solution>()
-const { src: solutionUrl } = await useAsset(props.image)
+defineProps<Solution>()
 </script>
 
 <template>
@@ -18,8 +17,8 @@ const { src: solutionUrl } = await useAsset(props.image)
     data-aos="fade-in"
     data-aos-duration="600"
   >
-    <img
-      :src="solutionUrl"
+    <Image
+      :src="image"
       class="background object-cover absolute w-full h-full"
     />
     <img 

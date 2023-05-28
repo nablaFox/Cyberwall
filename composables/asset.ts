@@ -17,8 +17,12 @@ export async function useAsset(source: string) {
   }
 
   async function load() {
-    const { default: url } = await import(`~/assets/images/${name}.${ext}`)
-    src.value = url
+    try {
+      const { default: url } = await import(`~/assets/images/${name}.${ext}`)
+      src.value = url
+    } catch (error) {
+      console.error(error)
+    }
   }
 
   return {

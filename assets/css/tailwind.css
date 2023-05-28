@@ -17,6 +17,7 @@
 
   img { @apply pointer-events-none }
   svg { @apply inline-block }
+  p { @apply font-thin leading-[1.6] }
 }
 
 @layer components {
@@ -47,9 +48,13 @@
   .purple-to-pink {
     @apply bg-gradient-to-r from-purple-1 to-pink-1;
   }
-
+  
   .pink-to-blue {
     @apply bg-gradient-to-r from-pink-3 to-blue-3;
+  }
+
+  .blue-to-pink {
+    @apply bg-gradient-to-r from-blue-3 to-pink-3;
   }
 
   .green-to-blue {
@@ -66,7 +71,7 @@
   }
 
   .text-bg-outlined {
-    @apply text-bg pl-1;
+    @apply pl-1;
     -webkit-text-stroke: 5px transparent;
     -webkit-text-fill-color: theme('colors.purple.DEFAULT')!important;
   }

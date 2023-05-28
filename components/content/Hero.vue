@@ -18,7 +18,7 @@ defineProps<{
       class="font-bold text-center text-2xl xs:text-3xl sm:text-[40px] sm:leading-[56px] md:text-5xl"
       data-aos="fade-up" 
     > 
-      <slot />
+      <ContentSlot :use="$slots.default" unwrap="p" />
     </h1>
 
     <div class="hero-buttons flex flex-col gap-4 sm:flex-row sm:gap-8 justify-center">

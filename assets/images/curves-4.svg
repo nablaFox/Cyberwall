@@ -1,0 +1,20 @@
+<svg class="our-process__rightblob" width="159px" height="442px" viewBox="0 0 159 442" version="1.1"
+  xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+  <defs>
+    <linearGradient x1="101.996836%" y1="50%" x2="-7.72351964%" y2="50%" id="linearGradient-1">
+      <stop stop-color="#7B4397" offset="0%"></stop>
+      <stop stop-color="#DC2430" offset="99.4932432%"></stop>
+    </linearGradient>
+  </defs>
+  <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+    <g id="About---header-v2" transform="translate(-1281.000000, -2445.000000)" fill-rule="nonzero"
+      stroke="url(#linearGradient-1)" stroke-width="3">
+      <g id="Our-process" transform="translate(318.000000, 2132.000000)">
+        <path
+          d="M1537.52368,274.092194 C1618.41819,333.283971 1709.8897,388.386842 1740.24962,467.828436 C1770.60955,547.270031 1739.85788,650.85564 1674.24127,707.516189 C1608.82053,764.176738 1508.73072,773.522808 1417.45507,805.844633 C1326.3753,837.971749 1244.1097,892.87991 1190.24532,872.630092 C1136.18506,852.185564 1110.52603,756.777766 1066.2593,674.610234 C1021.99257,592.637412 959.509889,523.904856 965.386003,463.350111 C971.262118,402.795366 1045.6929,350.223722 1115.61866,289.084848 C1185.34855,227.945974 1250.37755,158.434578 1318.14874,155.124512 C1385.91993,151.814445 1456.4333,215.095128 1537.52368,274.092194 Z"
+          id="Mask-Copy"
+          transform="translate(1358.500000, 516.000000) scale(-1, 1) translate(-1358.500000, -516.000000) "></path>
+      </g>
+    </g>
+  </g>
+</svg>

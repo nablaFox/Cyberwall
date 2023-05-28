@@ -1,5 +1,5 @@
 <script setup lang="ts">
-import type { PageSection } from '../PageSection.vue'
+import type { PageSection } from './PageSection.vue'
 
 interface Slide {
   text: string

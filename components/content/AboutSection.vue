@@ -1,41 +1,35 @@
 <script setup lang="ts">
 import type { CTA } from '@/types'
 
-const props = defineProps<{
+defineProps<{
   image: string
   title: string
   heading: string
   cta?: CTA
 }>()
-
-const { src: imageUrl } = await useAsset(props.image)
 </script>
 
 <template>
-
   <PageSection>
     <div class="-mb-10 self-start w-full max-w-[450px] md:self-end md:w-4/5 md:max-w-[787px] lg:mb-0 lg:-ml-[200px] lg:mr-[30px]">
-      <img 
-        :src="imageUrl" 
-        class="blob-img object-cover w-full aspect-[1/1]"
-        data-aos="fade-in" 
-      />
-      <BlobClip />
+      <BlobImage :image="image" />
     </div>
     
     <div class="flex flex-col gap-8 items-start self-start w-full mt-5 md:max-w-[490px] md:-mt-[100px] lg:w-1/2 lg:self-auto lg:mt-0">
-      <h3 
-        class="text-[120px] md:text-[180px] font-bold purple-to-pink text-bg-outlined leading-[1]"
+      <TextGradient
+        class="text-[120px] md:text-[180px] leading-[1]"
+        as="h3"
         data-aos="fade-up"
+        outlined
       >
         {{ title }}
-      </h3>
+      </TextGradient>
 
       <h4 class="text-4xl font-bold" data-aos="fade-in">
         {{ heading }}
       </h4>
 
-      <p class="font-thin" data-aos="fade-in">
+      <p data-aos="fade-in">
         <ContentSlot :use="$slots.default" unwrap="p" />
       </p>
 
@@ -51,17 +45,12 @@ const { src: imageUrl } = await useAsset(props.image)
       </CwButton>
     </div>
   </PageSection>
-
 </template>
 
 <style scoped lang="postcss">
 :deep(.section-wrapper) {
   @apply flex flex-col items-center justify-between lg:flex-row md:gap-12
 }
-
-.blob-clip { @apply absolute w-0 h-0 }
-
-.blob-img { clip-path: url('#clip') }
 
 .btn { transition: all }
 </style>

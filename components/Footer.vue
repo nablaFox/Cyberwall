@@ -1,20 +1,24 @@
 <script setup lang="ts">
 const { theme } = useTheme()
-const logo = (await useAsset(theme.value.logo || '')).src
 </script>
 
 <template>
-  <footer class="section mt-0">
+  <footer class="section mt-[150px]">
     <div class="flex-wrap flex items-start w-full justify-between border-b border-grey">
       <div class="flex items-center mb-10"> 
-        <img v-if="theme.logo" :src="logo" alt="logo" class="w-[90px] h-[90px] object-cover" />
+        <Image
+          v-if="theme.logo"
+          :src="theme.logo"
+          class="w-[90px] h-[90px] object-cover" 
+        />
         <div class="h-full ml-3">
           <div class="font-sol text-3xl"> 
             {{ theme.title }} 
           </div>
           <div 
             v-if="theme.description" 
-            class="ml-3 mt-3 text-[14px] font-medium capitalize"
+            class="mt-3 text-[14px] font-medium capitalize"
+            :class="theme.logo ? 'ml-3' : 'ml-1'"
           > 
             {{ theme.description }} 
           </div>

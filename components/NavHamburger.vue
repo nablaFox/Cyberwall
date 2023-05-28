@@ -1,11 +1,13 @@
 <script lang="ts" setup>
-defineProps<{ active: boolean }>()
+defineProps<{ 
+  active: boolean 
+}>()
 </script>
 
 <template>
   <button
     type="button"
-    class="md:hidden justify-center items-center w-8 h-6 flex"
+    class="justify-center items-center w-8 h-6 flex"
     :class="{ active }"
   >
     <span class="h-full w-full">

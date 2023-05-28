@@ -1,15 +1,14 @@
 <script setup lang="ts">
 export interface Service {
   name: string
-  blob: number
   icon: string
-  description: string
+  blob?: string
+  blobPos?: number
+  description?: string
 }
 
 const props = defineProps<Service>()
-
 const iconComponent = defineAsyncComponent(() => import(`./icons/${props.icon}Icon.vue`))
-const { default: blobUrl } = await import(`~/assets/images/blob-${props.blob}.svg`)
 </script>
 
 <template>
@@ -19,17 +18,19 @@ const { default: blobUrl } = await import(`~/assets/images/blob-${props.blob}.sv
     data-aos-delay="200"
   >
     <div class="h-[105px]">
-      <img 
-        :src="blobUrl" 
-        :class="`absolute -translate-x-2/4 pos-${props.blob}`"
+      <Image
+        v-if="blob" 
+        :src="blob" 
+        :class="`absolute -translate-x-2/4 pos-${blobPos || 1}`"
       />
+
       <component :is="iconComponent" />
     </div>
     <div>
       <h3 class="font-semibold text-[26px] my-3">
         {{ name }}
       </h3>
-      <p class="font-thin"> 
+      <p v-if="description"> 
         {{ description }}
       </p>
     </div>

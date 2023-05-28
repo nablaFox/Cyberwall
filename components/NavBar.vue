@@ -4,7 +4,6 @@ defineProps<{
 }>()
 
 const { theme } = useTheme()
-const logo = (await useAsset(theme.value.logo || '')).src
 </script>
 
 <template>
@@ -13,17 +12,17 @@ const logo = (await useAsset(theme.value.logo || '')).src
     :class="[theme.logo && 'py-[14px]']"
   >
     <NuxtLink to="/" class="flex items-center gap-3">
-      <img v-if="theme.logo" :src="logo" alt="logo" width="65">
+      <Image v-if="theme.logo" :src="theme.logo" alt="logo" width="65"/>
       <div class="font-sol text-2xl"> {{ theme.title }} </div>
     </NuxtLink>
 
-    <nav class="hidden md:flex gap-5 px-7 font-thin">
+    <nav class="hidden lg:flex gap-5 px-7 font-thin">
       <template v-for="item in theme.nav" :key="item.text">
         <Flyout v-if="'items' in item" :button="item.text" :items="item.items" />
         <NavLink v-else :item="item" />
       </template>
     </nav>
 
-    <NavHamburger :active="isScreenOpen" @click="$emit('toggle-screen')" />
+    <NavHamburger class="lg:hidden" :active="isScreenOpen" @click="$emit('toggle-screen')" />
   </div>
 </template>
