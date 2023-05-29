@@ -1,7 +1,8 @@
 ---
 title: Cyberwall | Team
 layout: team
-test: ok
+gradient: purple-to-pink
+headline: applications
 ---
 
 

@@ -1,6 +1,6 @@
 ---
 title: Cyberwall | Team
-layout: legal-page
+layout: team
 ---
 
 team section

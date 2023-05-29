@@ -5,9 +5,6 @@ export default defineNuxtConfig({
     '@nuxtjs/google-fonts',
     '@nuxt/content',
   ],
-  app: {
-    pageTransition: { name: 'page', mode: 'out-in' }
-  },
   googleFonts: {
     families: { 'Montserrat': [300, 400, 500, 600, 700] },
     download: false

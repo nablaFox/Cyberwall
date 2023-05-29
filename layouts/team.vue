@@ -1,11 +1,15 @@
 <script setup lang="ts">
-// query all the files in pcto folder, except index.md
-const pages = await queryContent('pcto').without('_').skip(1).find()
+import Default from './default.vue'
+
+const { page } = useContent()
 </script>
 
 <template>
-  <NuxtLayout name="default">
-    <Sidebar :items="pages" />
-    <slot />
-  </NuxtLayout>
+  <Default>
+    <div class="z-[999]">
+      <nav> teaam </nav>
+      <slot />
+    </div>
+  </Default>
+  
 </template>

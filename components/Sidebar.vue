@@ -1,6 +1,6 @@
 <script setup lang="ts">
 export interface SidebarItem {
-  title?: string
+  text?: string
   path?: string
 }
 
@@ -13,9 +13,7 @@ defineProps<{
 <template>
   <div>
     <div v-for="item in items">
-      <NuxtLink :to="item.path">
-        {{ item.title }}
-      </NuxtLink>
+      
     </div>
   </div>
 </template>
