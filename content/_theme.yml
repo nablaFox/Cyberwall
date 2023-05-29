@@ -37,10 +37,10 @@ footer:
           link: /
     - text: Informazioni
       items:
-        - text: Termini e Condizioni
-          link: /
-        - text: Privacy Policy
-          link: /
+        - text: Statuto
+          link: /statuto
+        - text: Atto costitutivo
+          link: /atto-costitutivo
         - text: Cookie Policy
           link: /
         - text: Accessibilità

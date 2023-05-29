@@ -3,7 +3,7 @@ export interface TextGradient {
   gradient?: string
   as?: string
   outlined?: boolean
-  unrap?: string
+  unwrap?: string
 }
 
 defineProps<TextGradient>()
@@ -15,7 +15,7 @@ defineProps<TextGradient>()
     :is="as || 'span'"
     :class="[gradient || 'purple-to-pink', { outlined }]"
   >
-    <ContentSlot :use="$slots.default" :unwrap="unrap" />
+    <ContentSlot :use="$slots.default" :unwrap="unwrap" />
   </component>
 </template>
 
@@ -29,13 +29,11 @@ defineProps<TextGradient>()
   background: inherit;
 }
 
-.filled,
 :deep(.filled) {
   -webkit-text-fill-color: transparent;
   background: inherit;
 }
 
-.default,
 :deep(.default) {
   -webkit-text-stroke: initial;
   -webkit-text-fill-color: initial;
