@@ -37,6 +37,10 @@
     transition-duration: 400ms;
   }
 
+  .abs-center-y {
+    @apply top-1/2 -translate-y-1/2 absolute;
+  }
+
   .unveiled {
     @apply opacity-100 visible;
   }

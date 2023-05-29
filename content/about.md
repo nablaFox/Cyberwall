@@ -14,7 +14,7 @@ imagePos: 2
   outlined: true
   as: div
   class: text-5xl sm:text-[78px] lg:text-[93px] text-center mt-4 mb-2
-  unrap: p
+  unwrap: p
   ---
   est. 2015
   :::
@@ -45,7 +45,7 @@ imagePos: 2
     class: text-[85px] lg:text-[105px] leading-[1]
     gradient: pink-to-blue
     data-aos: fade-in
-    unrap: p
+    unwrap: p
     ---
     Noi <br> [In]{.filled} Breve
     ::
@@ -64,4 +64,28 @@ strengths: First of all, we sit down with you to discuss the problem you're havi
 
 weaknesses: come stai?
 ---
+::
+
+::duplex-section
+---
+headline: Stop wasting time
+image: https://adapt.digital/wp-content/uploads/2020/02/Applications-Strip-Image.png
+---
+We all share the same, most valuable asset in life; time. We can’t get more of it, but we can control how we spend it. Let us automate the mundane for you and get you back some of your time!
+::
+
+::duplex-gradient-section
+#left
+  :::text-gradient
+  ---
+  as: h3
+  unwrap: p
+  ---
+  The outcome
+  :::
+
+The resulting website now hosts ~4,000-5,000 entries and loads most pages on average in under 1.5 seconds. Traffic on the website has soared and as a result, the company is now performing well.
+
+#right
+Page load speed & general average performance increase of ~92%.
 ::
