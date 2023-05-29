@@ -4,7 +4,11 @@ export default defineNuxtConfig({
     '@nuxtjs/tailwindcss',
     '@nuxtjs/google-fonts',
     '@nuxt/content',
+    'nuxt-icon'
   ],
+  app: {
+    pageTransition: { name: 'fade', mode: 'out-in' }
+  },
   googleFonts: {
     families: { 'Montserrat': [300, 400, 500, 600, 700] },
     download: false

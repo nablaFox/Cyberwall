@@ -18,7 +18,7 @@ const { theme } = useTheme()
           <div 
             v-if="theme.description" 
             class="mt-3 text-[14px] font-medium capitalize"
-            :class="theme.logo ? 'ml-3' : 'ml-1'"
+            :class="theme?.logo ? 'ml-3' : 'ml-1'"
           > 
             {{ theme.description }} 
           </div>

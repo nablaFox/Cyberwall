@@ -1,5 +1,5 @@
 ---
-title: Cyberwall | About
+title: About
 ---
 
 ::page-heading-section

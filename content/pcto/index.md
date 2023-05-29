@@ -1,8 +1,11 @@
 ---
 title: Cyberwall | Team
-layout: team
+gradient: green-to-blue
+layout: legal-page
 ---
 
-team section
+[moris](pcto/moris.md)
 
-[test](pcto/test.md)
+[asia](pcto/asia.md)
+
+[ester](pcto/ester.md)

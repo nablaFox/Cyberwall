@@ -69,6 +69,10 @@
     @apply bg-gradient-to-r from-pink-2 to-orange-2
   }
 
+  .underline {
+    @apply absolute rounded-2xl h-[3px] bottom-[-3px] left-0 w-full
+  }
+
   .text-bg {
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;

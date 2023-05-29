@@ -1,5 +1,5 @@
 ---
-title: Cyberwall | Home
+title: Home
 ---
 
 ::hero

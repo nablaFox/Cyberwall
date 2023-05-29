@@ -9,7 +9,7 @@ const { theme } = useTheme()
 <template>
   <div 
     class="section !my-0 py-6 flex justify-between items-center"
-    :class="[theme.logo && 'py-[14px]']"
+    :class="[theme?.logo && 'py-[14px]']"
   >
     <NuxtLink to="/" class="flex items-center gap-3">
       <Image v-if="theme.logo" :src="theme.logo" alt="logo" width="65"/>
