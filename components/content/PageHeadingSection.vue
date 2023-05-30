@@ -1,39 +1,17 @@
 <script setup lang="ts">
-import { useElementSize } from '@vueuse/core'
-
-const props = defineProps<{
+defineProps<{
   heading?: string
   subheading?: string
   gradient?: string
   image?: string
   imagePos?: number
+  fullWidth?: boolean
 }>()
-
-const container = ref<HTMLElement>()
-const { width } = useElementSize(container)
-
-const fontSize = computed(() => {
-  if (!container.value || !props.heading) return '80px'
-  if (width.value < 400) return '40px'
-  const maxWidth = width.value * 0.9 // 80% of container width
-  const textWidth = getTextWidth(props.heading, 'bold 180px sans-serif')
-  const ratio = maxWidth / textWidth
-  const fontSize = 180 * ratio
-  return `${fontSize}px`
-})
-
-function getTextWidth(text: string, font: string) {
-  const canvas = document.createElement('canvas')
-  const context = canvas.getContext('2d')!
-  context.font = font
-  const metrics = context.measureText(text)
-  return metrics.width
-}
 </script>
 
 <template>
 
-  <section class="section mt-0" ref="container">
+  <section class="section mt-0" ref="container" :class="fullWidth && '!max-w-none p-0'">
     <Image 
       v-if="image"
       :src="image"
@@ -43,9 +21,8 @@ function getTextWidth(text: string, font: string) {
     <div class="pt-[160px] ">
       <TextGradient
         as="h1"
-        class="font-bold leading-[1.15] text-center capitalize mb-6"
+        class="font-bold leading-[1.15] text-center capitalize mb-6 text-[40px] lg:text-[55px] xl:text-[95px]"
         data-aos="fade-up"
-        :style="{ fontSize }"
         :gradient="gradient || 'blue-to-pink'"
       >
         <span class="default"> {{ heading }} </span>

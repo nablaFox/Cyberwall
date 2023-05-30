@@ -1,25 +1,22 @@
 <script setup lang="ts">
-import type { PageSection } from './PageSection.vue'
-
 interface Slide {
-  text: string
   image: string
-  link: string
+  text?: string
+  link?: string
 }
 
-interface TeamSection extends PageSection {
+const props = defineProps<{
   slides: Slide[]
   button?: string
-}
+}>()
 
-const props = defineProps<TeamSection>()
 const imageUrls = await Promise.all(
   props.slides.map(async ({ image }) => (await useAsset(image)).src.value
 ))
 </script>
 
 <template>
-  <PageSection v-bind="props" full-width>
+  <PageSection full-width>
     <ClientOnly>
       <swiper-container
         slides-per-view="1"

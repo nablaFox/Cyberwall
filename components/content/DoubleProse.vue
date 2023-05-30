@@ -1,5 +1,14 @@
+<script setup lang="ts">
+withDefaults(defineProps<{
+  centered?: boolean
+}>(), { centered: true })
+</script>
+
 <template>
-  <div class="flex flex-col sm:flex-row max-w-[975px] mx-auto">
+  <div 
+    class="flex flex-col sm:flex-row max-w-[975px]"
+    :class="centered && 'mx-auto'"
+  >
     <div class="left w-full sm:pr-5 sm:w-1/2">
       <slot name="left" />
     </div>

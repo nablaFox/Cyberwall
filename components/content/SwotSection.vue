@@ -1,17 +1,16 @@
 <script setup lang="ts">
-import type { PageSection } from './PageSection.vue'
 import DeviseIcon from '../icons/DeviseIcon.vue'
 import QuestionIcon from '../icons/QuestionIcon.vue'
 import TrophyIcon from '../icons/TrophyIcon.vue'
 import WarningIcon from '../icons/WarningIcon.vue'
 
-export interface SwotSection extends PageSection {
-  opportunities?: string
+defineProps<{
   strengths?: string
   weaknesses?: string
+  opportunities?: string
   threats?: string
-  [key: string]: any // Add index signature to allow for dynamic property access
-}
+  [key: string]: any
+}>()
 
 const swot = [
   { icon: TrophyIcon, title: 'strengths' },
@@ -19,13 +18,11 @@ const swot = [
   { icon: DeviseIcon, title: 'opportunities' },
   { icon: WarningIcon, title: 'threats' }
 ]
-
-defineProps<SwotSection>()
 </script>
 
 <template>
 
-  <PageSection class="!pb-24" full-width>
+  <PageSection class="pb-24" full-width no-margin>
     <template #before>
       <img 
         class="absolute top-[-300px] left-[-100px] md:left-0 lg:top-0"
@@ -66,7 +63,7 @@ defineProps<SwotSection>()
 
 <style scoped lang="postcss">
 :deep(.title) {
-  @apply text-7xl lg:text-9xl lg:pt-24 mb-0
+  @apply text-7xl lg:text-9xl lg:pt-24
 }
 
 :deep(.section-wrapper) {

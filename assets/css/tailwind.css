@@ -41,6 +41,14 @@
     @apply top-1/2 -translate-y-1/2 absolute;
   }
 
+  .abs-center-x {
+    @apply left-1/2 -translate-x-1/2 absolute;
+  }
+
+  .abs-center {
+    @apply top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 absolute;
+  }
+
   .unveiled {
     @apply opacity-100 visible;
   }
@@ -67,6 +75,14 @@
 
   .pink-to-orange {
     @apply bg-gradient-to-r from-pink-2 to-orange-2
+  }
+
+  .blue-to-purple {
+    @apply bg-gradient-to-r from-blue-2 to-purple-2
+  }
+
+  .green-to-purple {
+    @apply bg-gradient-to-r from-green-2 to-purple-2
   }
 
   .underline {

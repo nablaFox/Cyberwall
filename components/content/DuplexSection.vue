@@ -20,7 +20,7 @@ defineProps<{
       <div class="sm:min-w-[475px]"> 
         <Image
           v-if="image" :src="image"
-          class="max-w-[200%] w-full h-full"
+          class="max-w-[200%] w-full h-[400px] lg:h-[530px] rounded-sm"
           data-aos="fade-in"
         />
       </div>

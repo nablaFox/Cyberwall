@@ -1,23 +1,22 @@
 <script setup lang="ts">
 import type { Solution } from '../Solution.vue'
-import type { PageSection } from './PageSection.vue'
 import type { CTA } from '@/types'
 
-interface SolutionSection extends PageSection {
+const props = defineProps<{
   solutions: Solution[],
+  fullWidth?: boolean
   cta?: CTA
-}
-
-const props = defineProps<SolutionSection>()
+}>()
 
 const solutionCount = computed(() => props.solutions.length)
 </script>
 
 <template>
-
+  
   <PageSection 
-    class="py-10"
-    v-bind="$props"
+    class="pb-10"
+    :class="fullWidth && 'lg:pb-24'"
+    :full-width="fullWidth"
   >
     <Solution 
       v-bind="solutions[0]"

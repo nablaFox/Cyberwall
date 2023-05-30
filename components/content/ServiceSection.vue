@@ -1,19 +1,13 @@
 <script setup lang="ts">
 import type { Service } from '../Service.vue'
-import type { PageSection } from './PageSection.vue'
 
-interface ServiceSection extends PageSection {
+defineProps<{
   services: Service[]
-}
-
-defineProps<ServiceSection>()
+}>()
 </script>
 
 <template>
-  <PageSection
-    v-bind="$props"
-    class="max-w-[1040px]"
-  >
+  <PageSection class="max-w-[1040px]">
     <Service
       v-for="service in services"
       v-bind="service" 

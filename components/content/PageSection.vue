@@ -6,6 +6,7 @@ export interface PageSection {
   titleAnimation?: string
   fullWidth?: boolean
   noGradient?: boolean
+  noMargin?: boolean
 }
 
 const props = defineProps<PageSection>()
@@ -39,7 +40,7 @@ const titleParts = computed(() => {
         class="title text-6xl lg:text-[80px] xl:text-[90px] mb-24"
         :data-aos="titleAnimation || 'fade-up'"
         :data-aos-duration="800"
-        :class="[!headline && 'text-center']"
+        :class="[!headline && 'text-center', noMargin && 'mb-8']"
       >
         <template v-if="noGradient">
           {{ title }}
@@ -65,6 +66,6 @@ const titleParts = computed(() => {
 .section:last-child { @apply mb-[0px] }
 
 .full-width {
-  @apply max-w-full p-0;
+  @apply max-w-full px-0;
 }
 </style>

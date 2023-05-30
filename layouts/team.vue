@@ -37,7 +37,7 @@ onMounted(addUnderlines)
       <Sidebar :items="pages" :gradient="page.gradient" />
       <div>
         <TextGradient
-          class="font-semibold text-[45px] md:text-[80px] lg:text-[100px] leading-[1]"
+          class="font-semibold text-[45px] md:text-[80px] lg:text-[100px] leading-[1] capitalize pb-2"
           as="h1"
           outlined
           :gradient="page.gradient"

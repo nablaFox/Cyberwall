@@ -1,5 +1,6 @@
 title: Cyberwall
 description: A Cyber Security Center
+logo: logo.svg
 
 nav:
   - text: home
@@ -15,9 +16,9 @@ nav:
   - text: contatti
     items:
       - text: posizione
-        link: /contacts/1
+        link: /contacts/position
       - text: supporto
-        link: /contacts/2
+        link: /contacts/support
 
 footer:
   message: 'Cyberwall Srl è una impresa registrata in Italia. Codice Fiscale: 12345678'
