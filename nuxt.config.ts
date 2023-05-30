@@ -4,10 +4,14 @@ export default defineNuxtConfig({
     '@nuxtjs/tailwindcss',
     '@nuxtjs/google-fonts',
     '@nuxt/content',
-    'nuxt-icon'
+    'nuxt-icon',
+    'nuxt-mapbox'
   ],
   app: {
-    pageTransition: { name: 'fade', mode: 'out-in' }
+    pageTransition: { name: 'page', mode: 'out-in' }
+  },
+  mapbox: {
+    accessToken: process.env.NUXT_MAPBOX_ACCESS_TOKEN
   },
   googleFonts: {
     families: { 'Montserrat': [300, 400, 500, 600, 700] },
