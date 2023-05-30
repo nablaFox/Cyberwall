@@ -5,8 +5,8 @@ const data = await queryContent('pcto').where({ _path: { $not: '/pcto' }}).find(
 
 const pages = data.map((page) => {
   return {
-    text: page._path?.split('/').pop(),
-    link: page._path
+    text: page._path?.split('/').pop() || '',
+    link: page._path || ''
   }
 }).sort((a, b) => a.text!.localeCompare(b.text || ''))
 
@@ -33,7 +33,7 @@ onMounted(addUnderlines)
 <template>
 
   <NuxtLayout name="default">
-    <section class="pt-[160px] pb-16 section mt-0 flex flex-col gap-6 md:gap-32 md:flex-row">
+    <section class="pt-[160px] pb-16 section-wrapper mt-0 flex flex-col gap-6 md:gap-32 md:flex-row">
       <Sidebar :items="pages" :gradient="page.gradient" />
       <div>
         <TextGradient

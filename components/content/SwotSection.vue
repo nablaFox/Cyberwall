@@ -22,7 +22,7 @@ const swot = [
 
 <template>
 
-  <PageSection class="pb-24" full-width no-margin>
+  <PageSection class="pb-24" no-margin>
     <template #before>
       <img 
         class="absolute top-[-300px] left-[-100px] md:left-0 lg:top-0"
@@ -38,7 +38,6 @@ const swot = [
         class="lg:py-28"
         effect="fade"
         space-between="30"
-        navigation="true"
         pagination="true"
         :fadeEffect="{ crossFade: true }"
       >
@@ -64,9 +63,5 @@ const swot = [
 <style scoped lang="postcss">
 :deep(.title) {
   @apply text-7xl lg:text-9xl lg:pt-24
-}
-
-:deep(.section-wrapper) {
-  @apply section
 }
 </style>

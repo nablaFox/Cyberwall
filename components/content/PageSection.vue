@@ -22,15 +22,12 @@ const titleParts = computed(() => {
 </script>
 
 <template>
-  <section 
-    :class="{ 'full-width': fullWidth }"
-    class="section"
-  >
+  <section class="section">
     <slot name="before" />
-    
     <div
       v-if="headline || title" 
       class="section-top"
+      :class="headline && 'section-wrapper'"
     >
       <h4 v-if="headline" class="text-3xl font-bold">
         {{ headline }}
@@ -55,8 +52,8 @@ const titleParts = computed(() => {
         </TextGradient>
       </h3>
     </div>
-
-    <div class="section-wrapper">
+    
+    <div class="section-wrapper" :class="{ 'full-width': fullWidth }">
       <slot />
     </div>
   </section>
@@ -66,6 +63,6 @@ const titleParts = computed(() => {
 .section:last-child { @apply mb-[0px] }
 
 .full-width {
-  @apply max-w-full px-0;
+  @apply max-w-full px-0
 }
 </style>

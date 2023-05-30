@@ -12,14 +12,16 @@ export interface Theme {
 
 export type NavItem = NavItemWithLink | NavItemWithChildren
 
-export interface CTA extends NavItemWithLink {}
-
 export interface NavItemWithLink {
   text: string
   link?: string
 }
 
 export interface NavItemWithChildren {
+  items: NavItemWithLink[]
+}
+
+export interface footerGroup {
   text?: string
   items: NavItemWithLink[]
 }
@@ -27,5 +29,5 @@ export interface NavItemWithChildren {
 export interface Footer {
   message?: string
   copyright?: string
-  items: NavItemWithChildren[]
+  items: footerGroup[]
 }

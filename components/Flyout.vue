@@ -1,12 +1,13 @@
 <script setup lang="ts">
 import type { NavItemWithLink } from '@/types'
 
-defineProps<{ 
-  button?: string
+const props = defineProps<{ 
   items: NavItemWithLink[]
 }>()
 
 const open = ref(false)
+const firstItem = computed(() => props.items[0])
+const restItems = computed(() => props.items.slice(1))
 </script>
 
 <template>
@@ -14,21 +15,17 @@ const open = ref(false)
     @mouseenter="open = true"
     @mouseleave="open = false"
   >
-    <button 
-      v-if="button"
-      :aria-expanded="open"
-      @click="open = !open"
-      class="capitalize"
-    > 
-      {{ button }}
-    </button>
+    <NavLink :item="firstItem" :aria-expanded="open" />
 
-    <div class="menu bg-purple px-2 pb-3 pt-1 absolute z-10 gap-2 flex flex-col veiled translate-x-[-8px]">
-      <NavLink v-for="item in items" :item="item" />
+    <div 
+      class="menu px-2 pb-3 pt-1 mt-2 absolute z-10 gap-2 flex flex-col veiled translate-x-[-8px]"
+      :style="{ backgroundColor: 'var(--background-color)' }"
+    >
+      <NavLink v-for="item in restItems" :item="item" />
     </div>
   </div>
 </template>
 
 <style lang="postcss" scoped>
-button[aria-expanded="true"] + .menu { @apply unveiled }
+.nav-link[aria-expanded="true"] + .menu { @apply unveiled }
 </style>

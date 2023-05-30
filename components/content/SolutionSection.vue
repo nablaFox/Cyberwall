@@ -1,11 +1,10 @@
 <script setup lang="ts">
 import type { Solution } from '../Solution.vue'
-import type { CTA } from '@/types'
 
 const props = defineProps<{
   solutions: Solution[],
   fullWidth?: boolean
-  cta?: CTA
+  cta?: { text: string, link: string }
 }>()
 
 const solutionCount = computed(() => props.solutions.length)
@@ -14,7 +13,7 @@ const solutionCount = computed(() => props.solutions.length)
 <template>
   
   <PageSection 
-    class="pb-10"
+    class="pb-12"
     :class="fullWidth && 'lg:pb-24'"
     :full-width="fullWidth"
   >

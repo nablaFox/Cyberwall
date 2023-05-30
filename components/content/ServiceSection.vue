@@ -7,7 +7,7 @@ defineProps<{
 </script>
 
 <template>
-  <PageSection class="max-w-[1040px]">
+  <PageSection>
     <Service
       v-for="service in services"
       v-bind="service" 

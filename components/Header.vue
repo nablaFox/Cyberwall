@@ -7,8 +7,8 @@ const { isScreenOpen, toggleScreen } = useNav()
 
 <template>
   <header 
-    class="fixed w-full transitions-colors ease duration-300 z-10"
-    :class="[y !== 0 || isScreenOpen ? 'bg-purple' : 'bg-transparent']"
+    class="fixed w-full transition-colors ease duration-[500ms] z-10"
+    :style="{ backgroundColor: y !== 0 || isScreenOpen ? 'var(--background-color)' : 'transparent' }"
   >
     <NavBar :is-screen-open="isScreenOpen" @toggle-screen="toggleScreen" />
     <NavScreen :open="isScreenOpen" />

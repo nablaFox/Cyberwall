@@ -3,7 +3,7 @@ const { theme } = useTheme()
 </script>
 
 <template>
-  <footer class="section mt-[150px]">
+  <footer class="section-wrapper mt-[150px]">
     <div class="flex-wrap flex items-start w-full justify-between border-b border-grey">
       <div class="flex items-center mb-10"> 
         <Image

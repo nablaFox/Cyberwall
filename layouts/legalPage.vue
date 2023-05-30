@@ -4,12 +4,7 @@ const title = useRoute().path.replace('/', '')
 
 <template>
   <NuxtLayout name="default">
-    <PageSection 
-      class="max-w-[900px]" 
-      no-gradient 
-      title-animation="none"
-      :title="title"
-    >
+    <PageSection no-gradient title-animation="none" :title="title">
       <slot />
     </PageSection>
   </NuxtLayout>
@@ -17,7 +12,7 @@ const title = useRoute().path.replace('/', '')
 
 <style lang="postcss" scoped>
 :deep(.title) {
-  @apply !text-[40px] font-semibold first-letter:capitalize mb-12
+  @apply !text-[40px] font-semibold first-letter:capitalize mb-12 pt-12
 }
 
 :deep(h1) {
@@ -27,6 +22,10 @@ const title = useRoute().path.replace('/', '')
 :deep(p) {
   @apply my-4;
   &:not(:first-child) { @apply mt-12 }
+}
+
+:deep(.section-wrapper) {
+  @apply max-w-[900px]
 }
 </style>
 

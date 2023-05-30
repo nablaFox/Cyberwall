@@ -10,7 +10,8 @@ const { theme } = useTheme()
   <Transition name="fade">
     <div 
       v-if="open" 
-      class="bg-purple font-thin z-10 fixed w-full p-page pt-1 flex flex-col gap-3 items-start !pb-6"
+      class="font-thin z-10 fixed w-full p-page pt-1 flex flex-col gap-3 items-start !pb-6"
+      :style="{ backgroundColor: 'var(--background-color)' }"
     >
       <template v-for="item in theme.nav" :key="item.text">
         <NavLink 

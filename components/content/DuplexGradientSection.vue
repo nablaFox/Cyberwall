@@ -36,6 +36,7 @@ defineProps<{
 }
 
 :deep(.section-wrapper) {
-  @apply flex flex-col-reverse lg:flex-row ml-auto max-w-[1220px] md:pl-10
+  @apply flex flex-col-reverse mr-0 md:pl-10 lg:flex-row;
+  max-width: var(--section-max-width)
 }
 </style>

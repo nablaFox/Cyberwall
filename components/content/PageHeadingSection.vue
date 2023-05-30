@@ -5,18 +5,19 @@ defineProps<{
   gradient?: string
   image?: string
   imagePos?: number
-  fullWidth?: boolean
 }>()
 </script>
 
 <template>
-
-  <section class="section mt-0" ref="container" :class="fullWidth && '!max-w-none p-0'">
-    <Image 
-      v-if="image"
-      :src="image"
-      :class="`absolute pos-${imagePos || 1}`"
-    />
+  
+  <PageSection class="mt-0">
+    <template #before>
+      <Image 
+        v-if="image"
+        :src="image"
+        :class="`absolute pos-${imagePos || 1}`"
+      />
+    </template>
 
     <div class="pt-[160px] ">
       <TextGradient
@@ -31,23 +32,27 @@ defineProps<{
 
       <slot />
     </div>
-  </section>
+  </PageSection>
 
 </template>
 
 <style scoped lang="postcss">
 .pos-1 {
-  @apply top-[-95px] right-[-50px] max-w-[600px] 
-  md:top-[0px] md:right-[-10px]
-  2xl:right-[-12%] xl:max-w-[800px]
+  @apply top-[-90px] right-[-50px] max-w-[600px]
+  lg:top-0 lg:right-0
+  xl:right-[7%] xl:max-w-[800px]
 }
 
 .pos-2 {
   @apply top-[unset] right-[unset]
-  lg:top-[-15%] lg:right-[-150px]
+  lg:top-[-15%] lg:left-[30%]
 }
 
 .pos-3 {
   @apply top-0 left-[50%] transform translate-x-[-50%] max-w-[none]
+}
+
+.pos-4 {
+  @apply left-0 top-0
 }
 </style>

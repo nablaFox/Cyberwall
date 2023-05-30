@@ -6,6 +6,7 @@
   --section-max-width: 1220px;
   --section-padding: 0 20px;
   --section-gap: 100px;
+  --background-color: theme('colors.black.1');
 }
 
 @layer base {
@@ -25,11 +26,15 @@
     padding: var(--section-padding);
   }
 
-  .section {
+  .section-wrapper {
     @apply mx-auto p-page;
     max-width: var(--section-max-width);
+  }
+
+  .section {
     margin-top: var(--section-gap);
   }
+
 
   .veiled {
     @apply opacity-0 invisible;
@@ -97,6 +102,6 @@
   .text-bg-outlined {
     @apply pl-1;
     -webkit-text-stroke: 5px transparent;
-    -webkit-text-fill-color: theme('colors.purple.DEFAULT')!important;
+    -webkit-text-fill-color: var(--background-color)!important;
   }
 }

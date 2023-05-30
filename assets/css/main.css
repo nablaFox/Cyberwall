@@ -1,7 +1,8 @@
 @import 'aos/dist/aos.css';
 
 body {
-  @apply bg-purple text-white;
+  @apply text-white;
+  background-color: var(--background-color);
 }
 
 @font-face {

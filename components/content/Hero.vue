@@ -1,8 +1,9 @@
 <script setup lang="ts">
-import type { CTA } from '@/types'
-
 defineProps<{
-  cta: CTA[]
+  cta: {
+    text: string
+    link: string
+  }[]
 }>()
 </script>
 
