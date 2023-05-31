@@ -1,24 +1,19 @@
 ---
 title: About
----
-
-::page-heading-section
----
+layout: with-heading
 heading: Enhancing Efficiency
 subheading: Generating Growth
 image: curves-2.svg
 imagePos: 2
 ---
-  :::text-gradient
-  ---
-  outlined: true
-  as: div
-  class: text-5xl sm:text-[78px] lg:text-[93px] text-center mt-4 mb-2
-  unwrap: p
-  ---
-  est. 2015
-  :::
 
+::page-section
+---
+title: est. 2015
+compact: true
+titleAnimation: none
+class: mt-4
+---
   :::double-prose
   #left
   We passionately believe that technology, specifically cloud connected technology, is here to help – not hinder – us. This is the foundation upon which Adapt was formed in February 2015. Since then, we have been imagining creative ways to solve an infinite variety of problems for an ever expanding portfolio of clients.

@@ -1,20 +1,16 @@
 ---
 title: Posizione
----
-
-::page-heading-section
----
+layout: with-heading
 heading: Vienici a trovare
 image: blob-6.png
 image-pos: 1
-fullWidth: true
 ---
-  :::mapbox
-  ---
-  class: mt-14
-  ---
-  :::
-::
+
+:::mapbox
+---
+class: mt-14
+---
+:::
 
 ::page-section
 ---

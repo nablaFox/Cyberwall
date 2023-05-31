@@ -1,15 +1,11 @@
 ---
 title: Contatti
----
-
-::page-heading-section
----
+layout: with-heading
 image: blob-7.svg
-heading: Comunicazione a portata di clic
+heading: Comunicazione a portata di click
+gradient: none
 image-pos: 4
 ---
-::
-
 
 ::contact-section
 ---

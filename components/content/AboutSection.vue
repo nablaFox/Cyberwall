@@ -1,11 +1,12 @@
 <script setup lang="ts">
-import type { CTA } from '@/types'
-
 defineProps<{
   image: string
   title: string
   heading: string
-  cta?: CTA
+  cta?:  {
+    text: string
+    link: string
+  }
 }>()
 </script>
 

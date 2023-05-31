@@ -22,7 +22,7 @@ const swot = [
 
 <template>
 
-  <PageSection class="pb-24" no-margin>
+  <PageSection class="pb-24" compact>
     <template #before>
       <img 
         class="absolute top-[-300px] left-[-100px] md:left-0 lg:top-0"
