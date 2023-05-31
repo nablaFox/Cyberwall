@@ -1,5 +1,5 @@
 ---
-title: Cyberwall | Team
+title: Team
 gradient: green-to-blue
 layout: legal-page
 ---

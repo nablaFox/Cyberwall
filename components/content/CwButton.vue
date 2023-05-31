@@ -1,7 +1,7 @@
 <script setup lang="ts">
 const props = defineProps<{
   href?: string
-  theme?: 'outlined' | 'waterfall'
+  theme?: 'outlined' | 'waterfall' | 'waterfall-2'
   size?: 'small' | 'medium' | 'big'
 }>()
 
@@ -33,12 +33,17 @@ const as = computed(() => props.href ? 'a' : 'button')
   @apply px-5 py-[10px] text-[12px]
 }
 
-.btn.waterfall {
+.btn.waterfall,
+.btn.waterfall-2 {
   &::after {
     @apply pseudo w-full h-[3px] bottom-0 left-0 purple-to-pink z-[-1]
     transition-[height] duration-300 ease-in-out
   }
   &:hover::after { @apply h-full }
   @apply bg-transparent border-0 px-2 py-1
+}
+
+.btn.waterfall-2::after {
+  @apply bottom-[10px]
 }
 </style>

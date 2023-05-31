@@ -19,6 +19,15 @@
   img { @apply pointer-events-none }
   svg { @apply inline-block }
   p { @apply font-thin leading-[1.6] }
+
+
+  input, textarea {
+    @apply appearance-none outline-none
+  }
+
+  textarea {
+    @apply bg-transparent
+  }
 }
 
 @layer components {
@@ -34,7 +43,6 @@
   .section {
     margin-top: var(--section-gap);
   }
-
 
   .veiled {
     @apply opacity-0 invisible;

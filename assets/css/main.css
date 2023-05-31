@@ -1,5 +1,9 @@
 @import 'aos/dist/aos.css';
 
+html {
+  scroll-behavior: smooth;
+}
+
 body {
   @apply text-white;
   background-color: var(--background-color);

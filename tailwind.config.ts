@@ -19,9 +19,10 @@ module.exports = {
       },
       white: "#ffffff",
       red: '#cf2e2e',
-      grey: {
+      gray: {
         DEFAULT: '#777',
-        1: '#aaa'
+        1: '#aaa',
+        2: '#615476'
       },
       pink: {
         DEFAULT: '#f78da7',

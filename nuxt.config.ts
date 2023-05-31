@@ -7,6 +7,13 @@ export default defineNuxtConfig({
     'nuxt-icon',
     'nuxt-mapbox'
   ],
+  vite: {
+    vue: {
+      script: {
+        defineModel: true
+      }
+    }
+  },
   app: {
     pageTransition: { name: 'page', mode: 'out-in' }
   },

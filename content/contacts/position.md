@@ -1,5 +1,5 @@
 ---
-title: Position
+title: Posizione
 ---
 
 ::page-heading-section
@@ -55,7 +55,7 @@ no-margin: true
   
 ::duplex-section
 ---
-headline: Pescara, città di pesce
+headline: Stop wasting time
 gradient: pink-to-orange
 image: https://gigliodimarepescara.eu/wp-content/uploads/2021/08/pescara-mare-1024x1024.jpg
 ---

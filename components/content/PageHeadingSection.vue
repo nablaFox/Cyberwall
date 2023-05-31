@@ -53,6 +53,6 @@ defineProps<{
 }
 
 .pos-4 {
-  @apply left-0 top-0
+  @apply left-0 top-0 max-w-[600px] xl:max-w-none
 }
 </style>
