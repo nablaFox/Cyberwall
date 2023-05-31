@@ -1,11 +1,110 @@
 ---
 title: Team
-gradient: green-to-blue
-layout: legal-page
+layout: with-heading
+heading: Insieme verso il successo
+subheading: Il nostro team
+image-pos: 5
+image: blob-8.svg
+gradient: pink-to-orange
 ---
 
-[moris](pcto/moris.md)
+::page-section
+  :::team-diagram
+  ---
+  functions:
+    - title: Funzionigramma | Cyberwall
+      children:
+      - title: D'Intino asia | di blasio moris | hysi ester
+        content: Soci - Organo volitivo
+        children:
+          - title: asia d'Intino
+            content: amministratore
+            link: /pcto/asia
+            type: left
+          - title: Hyisi Ester
+            content: amministratore
+            link: /pcto/ester
+            type: right
+          - title: di blasio moris
+            content: direttore generale
+            link: /pcto/moris
+            children:
+              - title: planamente leonardo
+                link: /pcto/leonardo
+                content: Acquisti, logistica e magazzino
+              - title: farese antonio, taraschi domenico
+                content: marketing e vendite
+                children:
+                  - title: antonio farese
+                    link: /pcto/antonio
+                    children:
+                    - title: domenico taraschi
+                      link: /pcto/domenico
+              - title: di soccio alessandro, giuliano tommaso
+                content: gestione del personale
+                children:
+                  - title: alessandro di soccio
+                    link: /pcto/alessandro
+                    children:
+                      - title: tommaso giuliani
+                        link: /pcto/tommaso
+              - title: capobianco donatiana
+                content: contabilità
+                link: /pcto/donatiana
+              - title: veronica coroneo
+                content: pianificazione
+                link: /pcto/veronica
 
-[asia](pcto/asia.md)
+  organization:
+    - title: Organigramma | Cyberwall
+      children:
+        - title: assemblea dei soci
+          content: organo volitivo
+          children:
+            - title: amministratore delegato
+              type: left
+            - title: direttore generale
+              children:
+                - title: Acquisti, logistica e magazzino
+                - title: marketing e vendite
+                - title: gestione del personale
+                - title: contabilità e finanziamenti
+                - title: pianificazione e programmazione
+        
+  ---
+  :::
+::
 
-[ester](pcto/ester.md)
+<!--
+blocks:
+  - title: D'Intino asia | di blasio moris | hysi ester
+    children:
+      - title: dibattuto ludovica
+        link: /pcto/ludovica
+        type: left
+      - title: moris di blasio
+        link: /pcto/moris
+      - title: Hyisi Ester
+        link: /pcto/ester
+        type: right
+
+      
+    
+    
+  - title: planamente leonardo
+    link: /pcto/leonardo
+
+  - title: farese antonio, taraschi domenico
+    children:
+      - title: antonio farese
+        link: /pcto/antonio
+      - title: domenico taraschi
+        link: /pcto/domenico
+
+  - title: di soccio alessandro, giuliani tommaso
+    children:
+      - title: tommaso giuliani
+        link: /pcto/tommaso
+      - title: di soccio alessandro
+        link: /pcto/alessandro
+-->

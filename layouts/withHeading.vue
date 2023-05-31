@@ -13,7 +13,7 @@ const { page } = useContent()
         />
       </template>
 
-      <div class="pt-[160px] ">
+      <div class="pt-[160px]">
         <TextGradient
           as="h1"
           class="font-bold leading-[1.15] text-center capitalize mb-6 text-[45px] md:text-[70px] xl:text-[95px]"
@@ -48,5 +48,9 @@ const { page } = useContent()
 
 .pos-4 {
   @apply left-0 top-0 max-w-[600px] xl:max-w-none
+}
+
+.pos-5 {
+  @apply -left-[100px] -top-[130px] md:-top-[70px] max-md:max-w-[400px]
 }
 </style>

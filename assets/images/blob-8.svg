@@ -1,0 +1,21 @@
+<svg id="eG6Hsew7cUk1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"
+  viewBox="0 0 1000 1000" width="500" heihgt="500" shape-rendering="geometricPrecision" text-rendering="geometricPrecision">
+  <defs>
+    <linearGradient id="eG6Hsew7cUk4-fill" x1="-0.207107" y1="0.5" x2="0.5" y2="-0.207107"
+      spreadMethod="pad" gradientUnits="objectBoundingBox" gradientTransform="translate(0 0)">
+      <stop id="eG6Hsew7cUk4-fill-0" offset="0%" stop-color="#ffe53b" />
+      <stop id="eG6Hsew7cUk4-fill-1" offset="100%" stop-color="#ff2525" />
+    </linearGradient>
+  </defs>
+  <g transform="matrix(1.279603 0 0 1.302535-78.993541-186.719891)" clip-path="url(#eG6Hsew7cUk5)">
+    <g>
+      <path
+        d="M831,628.5q23,128.5-80.5,226t-227.5,27-245-101.5-185-155.5t3-247t184-158t229.5-65.5t235,24.5t93,188-6.5,262Z"
+        fill="url(#eG6Hsew7cUk4-fill)" />
+    </g>
+    <clipPath id="eG6Hsew7cUk5">
+      <path
+        d="M831,628.5q23,128.5-80.5,226t-227.5,27-245-101.5-185-155.5t3-247t184-158t229.5-65.5t235,24.5t93,188-6.5,262Z" />
+    </clipPath>
+  </g>
+</svg>

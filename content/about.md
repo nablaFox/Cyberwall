@@ -4,7 +4,7 @@ layout: with-heading
 heading: Enhancing Efficiency
 subheading: Generating Growth
 image: curves-2.svg
-imagePos: 2
+image-pos: 2
 ---
 
 ::page-section

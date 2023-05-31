@@ -5,7 +5,7 @@ html {
 }
 
 body {
-  @apply text-white;
+  color: var(--text-color);
   background-color: var(--background-color);
 }
 

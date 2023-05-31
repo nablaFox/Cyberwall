@@ -7,6 +7,7 @@
   --section-padding: 0 20px;
   --section-gap: 100px;
   --background-color: theme('colors.black.1');
+  --text-color: theme('colors.white');
 }
 
 @layer base {
