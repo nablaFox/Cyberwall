@@ -17,7 +17,7 @@ class: mt-14
 title: Territorio
 headline: La scelta del
 gradient: pink-to-orange
-no-margin: true
+compact: true
 ---
   :::double-prose
   ---

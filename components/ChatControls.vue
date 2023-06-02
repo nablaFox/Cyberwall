@@ -22,6 +22,7 @@ const onSend = () => {
 
   emit('send', input.value)
   input.value = ''
+  console.log('flag')
 }
 </script>
 

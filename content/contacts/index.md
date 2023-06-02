@@ -12,9 +12,7 @@ image-pos: 4
 chat:
   title: Una mano in più...
   cta: Inizia chat
-  ctaIcon: icon-park-solid:message
-  headerTitle: cyberwall copilot
-  firstMessage: Ciao! Chiedi tutto quello di cui hai bisogno
+  icon: icon-park-solid:message
 
 form:
   cta: Compila il

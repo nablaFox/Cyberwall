@@ -28,7 +28,7 @@ const { theme } = useTheme()
 <style scoped>
 .fade-enter-active, 
 .fade-leave-active {
-  transition: opacity .3s ease;
+  transition: opacity 500ms cubic-bezier(0.4, 0, 0.2, 1);;
 }
 
 .fade-enter-from,

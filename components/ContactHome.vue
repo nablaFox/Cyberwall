@@ -3,14 +3,14 @@ defineProps<{
   chat?: {
     title: string
     cta: string
-    ctaIcon: string
+    icon: string
   }
   form?: {
     cta: string
   }
 }>()
 
-defineEmits(['openChat', 'openForm'])
+defineEmits(['openForm'])
 </script>
 
 <template>
@@ -36,10 +36,10 @@ defineEmits(['openChat', 'openForm'])
       <slot name="right" />
   
       <div class="mt-8 flex gap-4">
-        <CwButton theme="outlined" @click="$emit('openChat')"> 
+        <CwButton theme="outlined" to="/copilot"> 
           {{ chat?.cta }} 
         </CwButton>
-        <Icon v-if="chat?.ctaIcon" :name="chat.ctaIcon" size="30" />
+        <Icon v-if="chat?.icon" :name="chat.icon" size="30" />
       </div>
     </div>
   </div>

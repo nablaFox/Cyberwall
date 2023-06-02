@@ -1,5 +1,7 @@
 @import 'aos/dist/aos.css';
 
+* { @apply scrollbar }
+
 html {
   scroll-behavior: smooth;
 }
