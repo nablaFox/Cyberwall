@@ -12,7 +12,9 @@ image-pos: 4
 chat:
   title: Una mano in più...
   cta: Inizia chat
-  icon: icon-park-solid:message
+  ctaIcon: icon-park-solid:message
+  headerTitle: cyberwall copilot
+  firstMessage: Ciao! Chiedi tutto quello di cui hai bisogno
 
 form:
   cta: Compila il
@@ -49,7 +51,6 @@ form:
         - ion:logo-instagram
         - ion:logo-facebook
         - ion:logo-linkedin
-
 
 ---
 #left

@@ -14,7 +14,7 @@ const input = defineModel()
 
 <style scoped lang="postcss">
 input {
-  @apply px-1 py-[5px] mt-[5px] bg-transparent text-base border-b-[1px] border-gray-1 transition-all duration-300 outline-none w-full;
+  @apply px-1 py-[5px] mt-[5px] text-base border-b-[1px] border-gray-1 transition-all duration-300 outline-none w-full;
   &:focus { @apply border-pink-1 }
 }
 </style>

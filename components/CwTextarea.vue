@@ -16,7 +16,6 @@ const text = defineModel()
 textarea {
   @apply border-2 border-gray rounded-[5px] w-full h-[200px] p-4;
   transition: border-color 0.2s ease-in-out;
-  resize: none;
   &:focus {
     @apply border-pink-1
   }

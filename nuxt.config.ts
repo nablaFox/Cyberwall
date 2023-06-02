@@ -7,6 +7,11 @@ export default defineNuxtConfig({
     'nuxt-icon',
     'nuxt-mapbox'
   ],
+  runtimeConfig: {
+    public: {
+      openaiApiKey: process.env.NUXT_OPENAI_API_KEY
+    }
+  },
   vite: {
     vue: {
       script: {

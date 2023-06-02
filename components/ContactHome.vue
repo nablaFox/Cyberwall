@@ -3,7 +3,7 @@ defineProps<{
   chat?: {
     title: string
     cta: string
-    icon: string
+    ctaIcon: string
   }
   form?: {
     cta: string
@@ -39,7 +39,7 @@ defineEmits(['openChat', 'openForm'])
         <CwButton theme="outlined" @click="$emit('openChat')"> 
           {{ chat?.cta }} 
         </CwButton>
-        <Icon v-if="chat?.icon" :name="chat.icon" size="30" />
+        <Icon v-if="chat?.ctaIcon" :name="chat.ctaIcon" size="30" />
       </div>
     </div>
   </div>

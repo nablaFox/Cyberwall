@@ -7,7 +7,7 @@
   --section-padding: 0 20px;
   --section-gap: 100px;
   --background-color: theme('colors.black.1');
-  --text-color: theme('colors.white');
+  --text-color: theme('colors.white.1');
 }
 
 @layer base {
@@ -21,13 +21,12 @@
   svg { @apply inline-block }
   p { @apply font-thin leading-[1.6] }
 
-
   input, textarea {
-    @apply appearance-none outline-none
+    @apply appearance-none outline-none bg-transparent
   }
 
   textarea {
-    @apply bg-transparent
+    @apply resize-none
   }
 }
 
@@ -49,6 +48,28 @@
     @apply opacity-0 invisible;
     transition: opacity 0.25s, visibility 0.25s;
     transition-duration: 400ms;
+  }
+
+  .scrollbar-none {
+    scrollbar-width: none;
+    &::-webkit-scrollbar {
+      display: none;
+    }
+  }
+
+  .scrollbar {
+    &::-webkit-scrollbar {
+      height: 4px;
+      width: 4px;
+    }
+
+    &::-webkit-scrollbar-thumb {
+      @apply rounded-sm bg-white;
+    }
+    
+    &::-webkit-scrollbar-thumb:hover {
+      @apply rounded-sm bg-white-1;
+    }
   }
 
   .abs-center-y {

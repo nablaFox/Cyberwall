@@ -7,9 +7,9 @@ defineProps<{
   form: any
 }>()
 
-watch([chatOpen, formOpen], () => {
+watch([formOpen, chatOpen], () => {
   setTimeout(() => {
-    window.scrollTo(0, 0)
+    (formOpen.value || !chatOpen.value) && window.scrollTo(0, 0)
   }, 0)
 })
 </script>
@@ -25,7 +25,7 @@ watch([chatOpen, formOpen], () => {
       <template #left> <slot name="left" /> </template>
       <template #right> <slot name="right" /> </template>
     </ContactHome>
-    <Chat v-if="chatOpen" />
+    <Chat v-if="chatOpen" @exit="chatOpen = false" v-bind="chat" />
     <CwForm v-if="formOpen" v-bind="form" />
   </PageSection>
 </template>
