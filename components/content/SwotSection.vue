@@ -1,28 +1,34 @@
-<script setup lang="ts">
+<script setup lang="tsx">
+import { useWindowSize } from '@vueuse/core'
+
 import DeviseIcon from '../icons/DeviseIcon.vue'
 import QuestionIcon from '../icons/QuestionIcon.vue'
 import TrophyIcon from '../icons/TrophyIcon.vue'
 import WarningIcon from '../icons/WarningIcon.vue'
 
-defineProps<{
-  strengths?: string
-  weaknesses?: string
-  opportunities?: string
-  threats?: string
-  [key: string]: any
-}>()
+const { width } = useWindowSize()
 
-const swot = [
-  { icon: TrophyIcon, title: 'strengths' },
-  { icon: QuestionIcon, title: 'weaknesses' },
-  { icon: DeviseIcon, title: 'opportunities' },
-  { icon: WarningIcon, title: 'threats' }
-]
+function Slide(props: any, { slots }: { slots: any }) {
+  return (
+    <swiper-slide>
+      <div class="max-w-[550px] mx-auto flex flex-col items-center gap-5 text-center pb-14">
+        <div>
+          <props.icon />
+          <h4 class="my-4 font-bold capitalize text-2xl"> 
+            { props.title } 
+          </h4>
+        </div>
+        
+        <p> { slots.default() } </p>
+      </div>
+    </swiper-slide>
+  )
+}
 </script>
 
 <template>
 
-  <PageSection class="pb-24" compact>
+  <PageSection class="pb-24" :compact="width > 950">
     <template #before>
       <img 
         class="absolute top-[-300px] left-[-100px] md:left-0 lg:top-0"
@@ -41,19 +47,21 @@ const swot = [
         pagination="true"
         :fadeEffect="{ crossFade: true }"
       >
-        <swiper-slide
-          v-for="slide in swot"
-          :key="slide.title"
-        >
-          <div class="max-w-[550px] mx-auto flex flex-col items-center gap-5 text-center pb-14">
-            <div>
-              <component :is="slide.icon" />
-              <h4 class="my-4 font-bold capitalize text-2xl"> {{ slide.title }} </h4>
-            </div>
-            
-            <p> <span v-html="$props[slide.title]"></span> </p>
-          </div>
-        </swiper-slide>
+        <Slide :icon="TrophyIcon" title="strengths">
+          <slot name="strengths" />
+        </Slide>
+
+        <Slide :icon="QuestionIcon" title="weaknesses">
+          <slot name="weaknesses" />
+        </Slide>
+
+        <Slide :icon="DeviseIcon" title="opportunities">
+          <slot name="opportunities" />
+        </Slide>
+
+        <Slide :icon="WarningIcon" title="threats">
+          <slot name="threats" />
+        </Slide>
       </swiper-container>
     </ClientOnly>
   </PageSection>
@@ -63,5 +71,9 @@ const swot = [
 <style scoped lang="postcss">
 :deep(.title) {
   @apply text-7xl lg:text-9xl lg:pt-24
+}
+
+:deep(p) {
+  @apply my-2;
 }
 </style>

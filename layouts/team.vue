@@ -31,7 +31,7 @@ onMounted(addUnderlines)
 <template>
 
   <NuxtLayout name="default">
-    <section class="pt-[160px] md:pb-16 section-wrapper mt-0 flex flex-col gap-6 md:gap-32 md:flex-row">
+    <section class="pt-[160px] md:pb-16 section-wrapper mt-0 flex flex-col gap-6 md:gap-32 md:flex-row min-h-[calc(100svh-120px)]">
       <Sidebar :items="pages" :gradient="page.gradient" />
       <div>
         <TextGradient
@@ -46,19 +46,31 @@ onMounted(addUnderlines)
 
         <p> {{ page?.heading }} </p>
 
-        <div class="md:ml-[15%] pt-[75px] pb-6 w-[80%]" ref="container">
+        <div class="md:ml-[15%] pt-[50px] pb-6 w-[80%]" ref="container">
           <slot />
+          
+          <CwButton v-if="page?.link" :href="page.link" class="mt-8" theme="waterfall">
+            Scopri di più
+            <Icon name="ic:round-download" size="24" />
+          </CwButton>         
         </div>
       </div>
     </section>
+
+    <DuplexSection
+      v-if="page?.image"
+      :image="page.image"
+      :gradient="page.gradient"
+      :headline="page.imageHeadline" 
+    >
+      {{ page?.imageText }}
+    </DuplexSection>
   </NuxtLayout>
   
 </template>
 
 <style lang="postcss">
-h2 > span {
-  @apply underline h-[2px]
-}
+h2 > span { @apply underline h-[2px] }
 
 h2 {
   @apply inline-block text-[28px];
@@ -67,5 +79,6 @@ h2 {
   }
 }
 
-p { @apply mt-4 }
+p,
+ul { @apply mt-4 }
 </style>

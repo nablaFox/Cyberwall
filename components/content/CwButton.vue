@@ -3,27 +3,22 @@ const NuxtLink = resolveComponent('NuxtLink')
 
 const props = defineProps<{
   href?: string
-  to?: string
   theme?: 'outlined' | 'waterfall' | 'waterfall-2'
   size?: 'small' | 'medium' | 'big'
+  unwrap?: boolean
 }>()
 
-const as = computed(() => {
-  if (props.href) return 'a'
-  if (props.to) return NuxtLink
-  return 'button'
-})
+const as = computed(() => props.href ? NuxtLink : 'button')
 </script>
 
 <template>
   <component 
     class="btn" 
     :class="[theme, size]"
-    :is="(as as any)" 
-    :href="props.href" 
-    :to="props.to"
+    :is="as"
+    :to="props.href"
   >
-    <slot />
+    <ContentSlot :use="$slots.default" :unwrap="unwrap && 'p'"/>
   </component>
 </template>
 

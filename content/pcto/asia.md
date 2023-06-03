@@ -1,23 +1,23 @@
 ---
 gradient: green-to-blue
 title: Asia d'intino
-heading: We love to get to know how your business ticks. Moreover, we love to help you find ways to make it tick smoother, faster and become reliable. This is where our application development service offering comes in. Starting with a blank canvas and a problem statement, we’re able to create something from nothing and, more often than not, completely revolutionise the way your business operates - for the better!
+heading: Tra le attività svolte negli ultimi tre anni emerge l’impresa simulata. Per quanto concerne il mio contributo a tale progetto, ho svolto in autonomia e in gruppo diverse mansioni che mi hanno permesso di acquisire nuove competenze. Ottimizzare i tempi a dispozine, rispettare le scadenze dei lavori da svolgere, la capacità di lavorare in gruppo e di orientarsi all’efficienza sono degli esempi.
 ---
 
 
-## Web Applications
-The web, the internet, or even the cloud, whatever your chosen name, it’s not going anywhere. We believe everything we currently complete and save to our devices, will eventually be done online.
+## Attività svolte nello specifico
+Uno dei compiti più rilevanti, da svolgere in gruppo, che mi è stato assegnato consiste nella ricerca della posizione strategica da assegnare alla nostra azienda. A seguito di numerose ricerche, di un’attenta analisi del territorio e dalle esigenze del mercato abbiamo potuto scegliere la sede che rispondeva nei migliori dei modi alle nostre esigenze. Io insieme al mio gruppo di lavoro abbiamo, inoltre, esaminato ed elencato i maggiori competitors sul nostro territorio, che, come noi, hanno deciso di dedicarsi alla al settore della cyber security. 
 
-This is why we specialise in creating bespoke web based applications, unique to solving your specific needs. Our applications can be accessible from anywhere in the world (where there’s internet) if you’d like them to be. Or, they can be “locked down” to specific locations such as your office or home.
+Successivamente ho collaborato alla realizzazione dell’analisi S.W.O.T. svolta in modo più accurato dalla mia compagna di lavoro. 
+Nello scorso anno, inoltre, ho avuto modo di realizzare un ipotetico preventivo redatto dalla nostra azienda, una covering letter e un’offerta di lavoro. 
 
-Written using the most up to date technologies including Javascript (specifically React & Node.js), PHP, MongoDB, MySQL and more. You can be sure you’re in safe hands when working with us.
+## L'impresa simulata
 
-## Mobile Applications
-Much like how the internet has disrupted many industries and created more opportunities than we care to realise, the introduction of the smartphone only amplifies this disruption further. Nowadays it’s fully plausible that a company, possibly any company, could be run mostly from a smartphone device.
+- [Preventivo](https://drive.google.com/file/d/10ZlNgUA5kEVeOTYXIq6-5RV06w-s7VEb/view?usp=drive_link){.font-bold}
+- [Offerta di lavoro](https://drive.google.com/file/d/1ee3xp2ZHw0S0wK7D5EpYAfrVHDMM1K_q/view?usp=drive_link){.font-bold}
 
-With the computing power of these devices only on the rise, what can be achieved from having your own mobile application for your company is growing exponentially. What’s more, the creation of a bespoke mobile application can also work seamlessly with your bespoke web application.
+## Certificazioni conseguite
+Patente europea Icdl It-security nell’anno scolastico 2021/2022
 
-## Integrations
-Already use one or many online tools/applications in your day-to-day? Frustrated by having to copy & paste information between them because you can’t find a way for them to talk to one another? We think we can help.
-
-The likelihood of a web based system not having an API (Application Programming Interface) these days is slim to none. What’s an API, I hear you ask? An API allows us to carry out the same actions you might complete as a human, but with code. Why is this useful? It usually means we can either fully or at least partially automate a lot of tasks which you’re currently doing manually.
+## Obiettivi per il futuro
+Successivamente al diploma ho intenzione di intraprendere un corso di laurea triennale all’Università degli Studi di G. D’Annunzio in economia, imprese e mercati finanziari con l’obiettivo di migliorare e incrementare le mie conoscenze nelle discipline economiche.  

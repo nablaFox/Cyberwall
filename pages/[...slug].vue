@@ -1,5 +1,6 @@
 <script setup lang="ts">
 const { page, layout } = useContent()
+const { theme } = useTheme()
 
 if (!(page as any).value && process.server) {
   const event = useRequestEvent()
@@ -14,7 +15,7 @@ const pcto = computed(() => {
 
 const pageWithTitle = computed(() => ({
   ...page.value,
-  title: `Cyberwall | ${(page.value as any)?.title}`
+  title: `${theme.value.title} | ${(page.value as any)?.title}`
 }))
 
 useContentHead(pageWithTitle)

@@ -18,10 +18,10 @@ defineProps<{
       <h3 class="mb-5 leading-[1] font-bold text-[42px]"> {{ headline }} </h3>
       <ContentSlot :use="$slots.default" unwrap="p" />
     </div>
-    <div class="sm:min-w-[475px] max-h-[550px]"> 
+    <div class="sm:min-w-[475px]"> 
       <Image
         v-if="image" :src="image"
-        class="w-[475px] rounded-sm object-contain"
+        class="w-[475px] rounded-sm object-cover max-h-[550px] min-h-[360px] aspect-[475/550]"
         data-aos="fade-in"
       />
     </div>

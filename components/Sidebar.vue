@@ -25,14 +25,14 @@ const setClick = () => {
       <NavLink 
         v-if="showAll || i < 5"
         class="text-[28px] font-normal pb-[2px]"
-        :data-aos="!clicked ? 'fade-right' : ''"
+        :data-aos="!clicked ? 'fade-right' : 'fade-in'"
         :item="item"
         :gradient="gradient"
         :data-aos-delay="i * 100"
       />
     </template>
 
-    <button class="mt-4" @click="showAll = !showAll"> 
+    <button class="mt-4" @click="showAll = !showAll; clicked=true"> 
       {{ showAll ? 'Mostra meno' : 'Mostra tutti' }}
       <Icon 
         name="ic:outline-keyboard-arrow-down"

@@ -1,13 +1,13 @@
 <script setup lang="ts">
 interface Slide {
   image: string
-  text?: string
+  member?: string
   link?: string
 }
 
 const props = defineProps<{
   slides: Slide[]
-  button?: string
+  cta?: string
 }>()
 
 const imageUrls = await Promise.all(
@@ -39,10 +39,10 @@ const imageUrls = await Promise.all(
         >
           
           <div class="z-[1] w-[90%] left-1/2 -translate-x-2/4 text-center absolute bottom-8">
-            <h3 class="my-8 font-bold text-3xl"> {{ slide.text }} </h3>
+            <h3 class="my-8 font-bold text-3xl capitalize"> {{ slide.member }} </h3>
            
             <CwButton size="big" :href="slide.link"> 
-              {{ button ?? 'Scopri' }}
+              {{ cta ?? 'Scopri' }}
             </CwButton>
           </div>
         </swiper-slide>
@@ -54,7 +54,7 @@ const imageUrls = await Promise.all(
 <style scoped lang="postcss">
 .swiper-slide-active {
   @apply border-4 border-pink-1 sm:scale-100;
-  &:after { @apply bg-black/20 }
+  &:after { @apply bg-black/25 }
 }
 
 swiper-slide:not(.swiper-slide-active) .btn {

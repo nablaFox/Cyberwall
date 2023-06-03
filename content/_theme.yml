@@ -5,7 +5,7 @@ nav:
   - text: home
     link: /
   - text: chi siamo
-    link: /about
+    link: /about-us
   - text: il team
     link: /pcto
   - text: lavora con noi
@@ -39,10 +39,8 @@ footer:
         - text: Statuto
           link: /statuto
         - text: Atto costitutivo
-          link: /atto-costitutivo
+          link: /statuto
+        - text: Business Plan
+          link: https://drive.google.com/uc?export=download&id=1C9vJBH10uiL1L7gRvi6hGfBdGs1jpk4j
         - text: Cookie Policy
-          link: /
-        - text: Accessibilità
-          link: /
-        - text: Sitemap
           link: /

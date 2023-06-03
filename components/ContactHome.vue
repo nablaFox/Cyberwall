@@ -36,7 +36,7 @@ defineEmits(['openForm'])
       <slot name="right" />
   
       <div class="mt-8 flex gap-4">
-        <CwButton theme="outlined" to="/copilot"> 
+        <CwButton theme="outlined" href="/copilot"> 
           {{ chat?.cta }} 
         </CwButton>
         <Icon v-if="chat?.icon" :name="chat.icon" size="30" />

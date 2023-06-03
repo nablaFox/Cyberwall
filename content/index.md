@@ -5,10 +5,10 @@ title: Home
 ::hero
 ---
 cta:
-- text: Scopri di più
-  link: "/"
+- text: Sopri di più
+  link: /about-us
 - text: Le nostre soluzioni
-  link: "/"
+  link: /
 ---
 
 Proteggiamo la tua azienda dalle minacce informatiche. Affidati alla nostra cybersecurity
@@ -73,7 +73,7 @@ image: cyberwall-app.jpg
 
 cta:
   text: Leggi di più
-  link: /
+  link: /about-us
 ---
 
 Siamo diventati un'azienda leader nel settore della cybersecurity. La nostra passione per la sicurezza informatica ci spinge a offrire soluzioni di protezione avanzate per le imprese di tutte le dimensioni. Affidati alla nostra esperienza per proteggere i tuoi dati e la tua attività.
@@ -81,40 +81,50 @@ Siamo diventati un'azienda leader nel settore della cybersecurity. La nostra pas
 
 ::team-section
 ---
-title: Il team
+title: Il Team
 slides:
-  - text: Test text text
+  - member: donatiana capobianco
+    image: donatiana.jpeg
+    link: /pcto/donatiana
+
+  - member: antonio farese
+    image: antonio.jpeg
+    link: /pcto/antonio
+
+  - member: veronica coroneo
     image: cyberwall-app.jpg
-    link: /
-  - text: Test text text
+    link: /pcto/veronica
+
+  - member: moris di blasio
+    image: moris.jpeg
+    link: /pcto/moris
+
+  - member: tommaso giuliani
     image: cyberwall-app.jpg
-    link: /
-  - text: Test text text
+    link: /pcto/tommaso
+
+  - member: domenico taraschi
     image: cyberwall-app.jpg
-    link: /
-  - text: Test text text
+    link: /pcto/domenico
+
+  - member: ludovica dibattuto
+    image: ludovica.jpeg
+    link: /pcto/ludovica
+
+  - member: asia d'Intino
+    image: asia.jpeg
+    link: /pcto/asia
+
+  - member: ester hisy
     image: cyberwall-app.jpg
-    link: /
-  - text: Test text text
+    link: /pcto/ester
+
+  - member: leonardo planamente
+    image: leonardo.jpeg
+    link: /pcto/leonardo
+  
+  - member: alessandro di soccio
     image: cyberwall-app.jpg
-    link: /
-  - text: Test text text
-    image: cyberwall-app.jpg
-    link: /
-  - text: Test text text
-    image: cyberwall-app.jpg
-    link: /
-  - text: Test text text
-    image: cyberwall-app.jpg
-    link: /
-  - text: Test text text
-    image: cyberwall-app.jpg
-    link: /
-  - text: Test text text
-    image: cyberwall-app.jpg
-    link: /
-  - text: Test text text
-    image: cyberwall-app.jpg
-    link: /
+    link: /pcto/alessandro
 ---
 ::
