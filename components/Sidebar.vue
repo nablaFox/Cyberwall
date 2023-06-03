@@ -29,6 +29,7 @@ const setClick = () => {
         :item="item"
         :gradient="gradient"
         :data-aos-delay="i * 100"
+        data-aos-offset="0"
       />
     </template>
 

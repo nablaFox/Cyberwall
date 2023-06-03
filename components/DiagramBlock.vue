@@ -11,11 +11,10 @@ export type DiagramBlock = {
 
 const props = defineProps<DiagramBlock>()
 
+const active = ref(false)
 const childrenCount = computed(() => {
   return props.children?.filter(child => child.type === undefined).length ?? 0
 })
-
-const active = ref(false)
 
 setTimeout(() => {
   active.value = true
@@ -23,13 +22,12 @@ setTimeout(() => {
 </script>
 
 <template>
-
   <div 
     class="diagram-item flex flex-col gap-16 items-center" 
     :class="[type && 'absolute']"
   >
     <NuxtLink 
-      class="rounded-sm bg border-gray-1 border font-semibold px-3 py-2 capitalize w-[160px] text-center cursor-pointer hover:border-[#df4f6b] transition-[border] duration-500" 
+      class="rounded-sm bg border-gray-1 border font-semibold px-3 py-2 capitalize w-[160px] text-center cursor-pointer hover:border-orange-3 transition-[border] duration-500" 
       :class="[
         children && 'line-down', 
         parent && 'line-up', 
@@ -51,10 +49,7 @@ setTimeout(() => {
       <DiagramBlock v-for="child in children" v-bind="{ ...child, parent: true, depth: (depth || 0) + 1 }" />
     </div>
   </div>
-  
-  
 </template>
-
 
 <style scoped lang="postcss">
 .line {
@@ -107,7 +102,7 @@ setTimeout(() => {
 }
 
 .depth-0 {
-  @apply w-[350px] font-extrabold text-xl py-4 border-[#df4f6b];
+  @apply w-[350px] font-extrabold text-xl py-4 border-orange-3;
 }
 
 .depth-1,

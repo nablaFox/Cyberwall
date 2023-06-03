@@ -15,14 +15,14 @@ const emit = defineEmits<{
   send: [input: string]
 }>()
 
-const { textarea, input } = useTextareaAutosize()
+const { textarea, input, triggerResize } = useTextareaAutosize()
 
 const onSend = () => {
   if (!input.value) return
 
   emit('send', input.value)
   input.value = ''
-  console.log('flag')
+  setTimeout(triggerResize, 0)
 }
 </script>
 

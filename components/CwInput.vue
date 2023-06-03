@@ -5,7 +5,7 @@ const input = defineModel()
 
 <template>
   <div class="input">
-    <label name="Name" class="capitalize"> 
+    <label name="Name" class="capitalize font-semibold text-lg"> 
       {{ label }} 
     </label>
     <input type="text" v-model="input" />

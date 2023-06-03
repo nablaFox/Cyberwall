@@ -27,7 +27,7 @@ defineEmits(['openForm'])
       <TextGradient 
         v-if="chat?.title"
         gradient="blue-to-pink" 
-        class="text-2xl inline-block mb-2" 
+        class="text-2xl inline-block mb-2 first-letter:capitalize" 
         as="h2"
       >
         {{ chat.title }}

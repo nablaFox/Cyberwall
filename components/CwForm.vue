@@ -68,7 +68,7 @@ const onSubmit = () => {
 
 <style lang="postcss" scoped>
 .row {
-  @apply mt-5 mb-10 w-full max-w-[400px]
+  @apply mt-5 mb-10 w-full max-w-[400px] lg:max-w-[500px]
 }
 
 .selection label {

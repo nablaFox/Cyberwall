@@ -15,7 +15,7 @@ const isBot = computed(() => props?.role === 'assistant')
 <template>
 
   <div
-    class="max-w-[480px] 2xl:max-w-[550px] border-[#292929] border rounded-lg px-5 py-2 break-words"
+    class="max-w-[90%] border-[#292929] border rounded-lg break-words min-[620px]:max-w-[480px] 2xl:max-w-[550px] min-w-[85px]"
     :class="[role]"
   >
     <div class="mb-3 flex items-center gap-2">
@@ -35,7 +35,9 @@ const isBot = computed(() => props?.role === 'assistant')
 
 <style lang="postcss" scoped>
 .user { 
-  @apply self-end;
+  @apply self-end p-3 sm:px-5 sm:py-4;
   & > div { @apply mb-1 }
 }
+
+.assistant { @apply pb-3 pt-5 px-3 sm:pl-4 sm:pr-5 }
 </style>

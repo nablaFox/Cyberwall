@@ -65,7 +65,7 @@ const solutionCount = computed(() => props.solutions.length)
 <style scoped lang="postcss">
 :deep(.section-wrapper) { @apply flex justify-between flex-wrap }
 
-.solution { @apply h-[400px] max-w-none }
+.solution { @apply max-w-none }
 
 @media (max-width: theme('screens.lg')) {
   .solution { @apply w-full m-0 !mb-[50px] }

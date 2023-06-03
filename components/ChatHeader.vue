@@ -3,12 +3,13 @@ import ArrowIcon from './icons/ArrowIcon.vue'
 
 defineProps<{
   title?: string
+  mobile?: boolean
 }>()
 </script>
 
 <template>
 
-  <div class="absolute z-[1] flex items-center top-0 bg-transparent py-4 w-full chat-header">
+  <div class="absolute z-[1] flex items-center top-0 bg-transparent py-4 w-full chat-header" :class="mobile && '!left-0'">
     <button @click="$router.push('/contacts')" class="flex items-center capitalize">
       <ArrowIcon />
       <TextGradient class="text-2xl" gradient="blue-to-pink"> 

@@ -13,7 +13,7 @@ defineProps<Solution>()
 <template>
   <div 
     :class="[blob || 'top-right', type]"
-    class="solution max-w-[800px] relative" 
+    class="solution max-w-[800px] relative h-[400px]" 
     data-aos="fade-in"
     data-aos-duration="600"
   >

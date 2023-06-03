@@ -23,12 +23,13 @@ onBeforeMount(hide)
   <PageSection>
     <div class="flex flex-col justify-between overflow-hidden max-w-[800px] 2xl:max-w-[1000px] mx-auto h-[calc(100svh-120px)]">
       <ChatHeader 
+        :mobile="isMobile"
         :title="headerTitle" 
         @exit="$emit('exit')"
       />
   
-      <div class="flex flex-col gap-4 overflow-y-scroll pt-20 md:pt-[74px] scrollbar pr-6 mb-6" :class="isMobile && 'scrollbar-none'">
-        <ChatMessage role="assistant" :content="firstMessage"  :botIcon="botIcon" />
+      <div class="flex flex-col gap-4 overflow-y-scroll pt-20 md:pt-[74px] scrollbar pr-6 mb-6 test" :class="isMobile && 'scrollbar-none !pr-0'">
+        <ChatMessage role="assistant" :content="firstMessage" :botIcon="botIcon" />
         <ChatMessage 
           v-for="message, i in chat"
           v-bind="message" 
