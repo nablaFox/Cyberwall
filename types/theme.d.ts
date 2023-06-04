@@ -21,7 +21,7 @@ export interface NavItemWithChildren {
   items: NavItemWithLink[]
 }
 
-export interface footerGroup {
+export interface FooterGroup {
   text?: string
   items: NavItemWithLink[]
 }
@@ -29,5 +29,5 @@ export interface footerGroup {
 export interface Footer {
   message?: string
   copyright?: string
-  items: footerGroup[]
+  items: FooterGroup[]
 }

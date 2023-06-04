@@ -7,7 +7,7 @@ defineProps<{
 </script>
 
 <template>
-  <PageSection class="pb-24">
+  <PageSection>
     <Work
       v-for="work in works"
       :key="work.title"

@@ -60,7 +60,7 @@ const titleParts = computed(() => {
 </template>
 
 <style scoped lang="postcss">
-.section:last-child { @apply mb-[0px] }
+.section:last-child { @apply mb-[100px] sm:mb-[150px] }
 
 .full-width {
   @apply max-w-full px-0

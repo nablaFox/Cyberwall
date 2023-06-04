@@ -27,7 +27,7 @@ const onChange = (event: Event) => {
         @change="onChange"
       />
   
-      <span class="rounded-full bg-white w-[20px] h-[20px] inline-block abs-center-y right-[calc(100%-20px)] transition-all" ref="ball" />
+      <span class="rounded-full bg-white-1 w-[20px] h-[20px] inline-block abs-center-y right-[calc(100%-20px)] transition-all" ref="ball" />
     </div>
 
     <span class="text-sm font-semibold">
