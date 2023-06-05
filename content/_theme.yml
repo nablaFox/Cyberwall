@@ -10,8 +10,8 @@ nav:
     link: /pcto
   - text: lavora con noi
     link: /work-with-us
-  - text: showcase
-    link: /showcase
+  - text: soluzioni
+    link: /solutions
   - items:
     - text: contatti
       link: /contacts
@@ -25,7 +25,7 @@ footer:
     - text: Contatti
       items:
         - text: Cyberwall Srl
-        - text: Via Veneto, 4
+        - text: Via Falcone e Borsellino, 6
         - text: Pescara, PE
         - text: 65010
     - text: Connettiti
@@ -41,6 +41,6 @@ footer:
         - text: Atto costitutivo
           link: /statuto
         - text: Business Plan
-          link: https://drive.google.com/uc?export=download&id=1C9vJBH10uiL1L7gRvi6hGfBdGs1jpk4j
+          link: https://drive.google.com/file/d/1RQC-bZqc9jvyZAya69Eq-GRG97Xh-Fcm/view?usp=drive_link
         - text: Cookie Policy
           link: /

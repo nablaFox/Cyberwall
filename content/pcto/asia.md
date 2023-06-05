@@ -1,7 +1,7 @@
 ---
-gradient: green-to-blue
 title: Asia d'intino
 heading: Tra le attività svolte negli ultimi tre anni emerge l’impresa simulata. Per quanto concerne il mio contributo a tale progetto, ho svolto in autonomia e in gruppo diverse mansioni che mi hanno permesso di acquisire nuove competenze. Ottimizzare i tempi a dispozine, rispettare le scadenze dei lavori da svolgere, la capacità di lavorare in gruppo e di orientarsi all’efficienza sono degli esempi.
+gradient: green-to-blue
 ---
 
 ## Attività svolte nello specifico

@@ -1,10 +1,10 @@
 ---
 gradient: pink-to-blue
 title: Moris Di Blasio
-heading: Durante il percorso scolastico, intrapreso presso questa Scuola, ho acquisito numerose competenze trasversali, che saranno fondamentali per la realizzazione del mio "progetto di vita", un cammino che abbraccia i miei obiettivi personali e professionali, aprendo le porte a nuove opportunità e sfide che mi attenderanno lungo il cammino.
+heading: Durante il percorso scolastico, intrapreso presso questa Scuola, ho acquisito numerose competenze trasversali, che saranno fondamentali per la realizzazione del mio “progetto di vita”
 image: https://drive.google.com/uc?export=download&id=1UuRP-gBSkXG9whCkH3RpM3X0JUw4LcHJ
 imageHeadline: Il sogno
-imageText: Il progetto che è ancora in fase embrionale, prevedo che molto presto predisporrò tutta la documentazione necessaria per iniziare questa avventura (Business Plan, Budgets, Atto costitutivo, Statuto. Un sogno che richiede tempo e denaro, ma soprattutto passione.
+imageText: Un progetto che è ancora in fase embrionale, prevedo che molto presto predisporrò tutta la documentazione necessaria per iniziare questa avventura (Business Plan, Budgets, Atto costitutivo, Statuto. Un sogno che richiede tempo e denaro, ma soprattutto passione.
 ---
 
 ## Cosa ho appreso?
@@ -13,7 +13,7 @@ imageText: Il progetto che è ancora in fase embrionale, prevedo che molto prest
 - Cittadinanza attiva
 - Elevata consapevolezza del contesto sociale
 
-Ho scelto questo percorso scolastico perché, in fondo, credo di avere sempre avuto una concreta predisposizione verso una formazione aziendalistica e collaborativa e, grazie agli  stimoli e ai coinvolgimenti ricevuti, ho imparato a potenziarle e a farle crescere sempre di più.
+Ho scelto questo percorso scolastico perché, in fondo, credo di avere sempre avuto una concreta predisposizione verso una formazione aziendalistica e collaborativa e, grazie agli stimoli e ai coinvolgimenti ricevuti, ho imparato a potenziarle e a farle crescere sempre di più.
 
 Altre declinazioni che ho appreso sono:
 
@@ -26,7 +26,7 @@ Altre declinazioni che ho appreso sono:
 
 Le mie [Hard Skills]{.text-blue .font-bold}, acquisite durante il processo di apprendimento formale, basate sulle discipline professionalizzanti del corso S.I.A. (Sistemi Informativi A	aziendali), sono:
 
-- Capacità di PIanificazione e progettazione delle attività da svolgere
+- Capacità di Pianificazione e progettazione delle attività da svolgere
 - Miglioramento della qualità della conoscenza della Lingua Inglese in forma scritta e parlata
 - Interpretare fenomeni giuridico-economici di attualità
 - Elaborare documenti contabili

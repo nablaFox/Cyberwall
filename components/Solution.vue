@@ -46,8 +46,8 @@ defineProps<Solution>()
 }
 
 .bottom-left {
-  .blob { @apply -bottom-1/4 -left-[50px] }
-  .content { @apply bottom-5 left-5 text-left }
+  .blob { @apply -bottom-[18%] -left-[70px] }
+  .content { @apply bottom-5 -left-8 text-left }
 }
 
 .blob { @apply z-10 }

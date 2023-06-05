@@ -15,7 +15,7 @@ const addUnderlines = () => {
   if (!container.value) return
   
   const h2s = container.value.querySelectorAll('h2')
-  const gradient = page.value.gradient
+  const gradient = page.value?.gradient || 'purple-to-pink'
 
   h2s.forEach((h2) => {
     const span = document.createElement('span')
@@ -30,7 +30,7 @@ onMounted(addUnderlines)
 <template>
 
   <NuxtLayout name="default">
-    <section class="pt-[160px] md:pb-16 section-wrapper mt-0 flex flex-col gap-6 md:gap-32 md:flex-row min-h-screen">
+    <section class="section pt-[120px] md:pt-[160px] md:pb-16 section-wrapper !mt-0 flex flex-col gap-6 md:gap-32 md:flex-row min-h-screen">
       <Sidebar :items="pages" :gradient="page.gradient" class="mb-4"/>
       <div>
         <TextGradient
@@ -48,9 +48,9 @@ onMounted(addUnderlines)
         <div class="pt-[50px] pb-6 md:w-[80%] md:ml-[15%]" ref="container">
           <slot />
           
-          <CwButton v-if="page?.link" :href="page.link" class="mt-8" theme="waterfall">
+          <CwButton v-if="page?.link" :href="page.link" class="mt-8" theme="waterfall" :gradient="page?.gradient">
             Scopri di più
-            <Icon name="ic:round-download" size="24" />
+            <Icon :name="page?.linkIcon || 'ic:round-download'" size="24" />
           </CwButton>         
         </div>
       </div>
@@ -60,7 +60,7 @@ onMounted(addUnderlines)
       v-if="page?.image"
       class="!mt-12"
       :image="page.image"
-      :gradient="page.gradient"
+      :gradient="page.gradient || 'purple-to-pink'"
       :headline="page.imageHeadline" 
     >
       {{ page?.imageText }}
@@ -80,7 +80,8 @@ h2 {
 }
 
 p,
-ul { @apply mt-4 }
+ul,
+ol { @apply mt-4 }
 
 strong { @apply font-semibold }
 </style>

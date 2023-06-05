@@ -1,7 +1,8 @@
 ---
 title: Donatiana Capobianco
-gradient: purple-to-pink
-link: https://drive.google.com/file/d/102eoRErO5bbvNTviTWBUXPFnCV_2mG95/view?usp=drive_link
+link: https://docs.google.com/presentation/d/e/2PACX-1vT-QjB89tXj0VXQU0gcdomCvfF1j3PUyYi5dVO4-oXBUCT2zw3R3kk63kQcjlsNdA/pub?start=false&loop=false&delayms=30000
+gradient: purple-to-blue
+linkIcon: majesticons:presentation-play
 ---
 
 ## Certificazioni extra-curriculari

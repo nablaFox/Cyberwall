@@ -21,7 +21,7 @@ gradient: pink-to-orange
             content: amministratore
             link: /pcto/asia
             type: left
-          - title: Hyisi Ester
+          - title: Hysi Ester
             content: amministratore
             link: /pcto/ester
             type: right
@@ -51,9 +51,14 @@ gradient: pink-to-orange
               - title: capobianco donatiana
                 content: contabilità
                 link: /pcto/donatiana
-              - title: veronica coroneo
+              - title: coroneo veronica, dibattuto ludovica
                 content: pianificazione
-                link: /pcto/veronica
+                children:
+                  - title: veronica coroneo
+                    link: /pcto/veronica
+                    children:
+                      - title: ludovica dibattuto
+                        link: /pcto/ludovica
 
   organization:
     - title: Organigramma | Cyberwall

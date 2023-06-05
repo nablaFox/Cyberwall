@@ -6,9 +6,11 @@ const props = defineProps<{
   theme?: 'outlined' | 'waterfall' | 'waterfall-2'
   size?: 'small' | 'medium' | 'big'
   unwrap?: boolean
+  gradient?: string
 }>()
 
 const as = computed(() => props.href ? NuxtLink : 'button')
+const isWaterfall = computed(() => props.theme?.includes('waterfall'))
 </script>
 
 <template>
@@ -18,6 +20,7 @@ const as = computed(() => props.href ? NuxtLink : 'button')
     :is="as"
     :to="props.href"
   >
+    <span class="underline" v-if="isWaterfall" :class="[gradient || 'purple-to-pink'] "/>
     <ContentSlot :use="$slots.default" :unwrap="unwrap && 'p'"/>
   </component>
 </template>
@@ -36,17 +39,15 @@ const as = computed(() => props.href ? NuxtLink : 'button')
   @apply px-5 py-[10px] text-[12px]
 }
 
+.underline {
+  @apply bottom-0 transition-[height] duration-300 ease-in-out rounded-none z-[-1]
+}
+
 .btn.waterfall,
 .btn.waterfall-2 {
-  &::after {
-    @apply pseudo w-full h-[3px] bottom-0 left-0 purple-to-pink z-[-1]
-    transition-[height] duration-300 ease-in-out
-  }
-  &:hover::after { @apply h-full }
+  &:hover .underline { @apply h-full }
   @apply bg-transparent border-0 px-2 py-1
 }
 
-.btn.waterfall-2::after {
-  @apply bottom-[10px]
-}
+.btn.waterfall-2 .underline { @apply bottom-[10px] }
 </style>

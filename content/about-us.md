@@ -38,7 +38,7 @@ class: mt-4
     ---
     as: h1
     outlined: true
-    class: text-[85px] lg:text-[105px] leading-[1]
+    class: text-[70px] sm:text-[80px] lg:text-[100px] leading-[1]
     gradient: pink-to-blue
     data-aos: fade-in
     unwrap: p
@@ -51,15 +51,13 @@ class: mt-4
   :::
 ::
 
-
 ::duplex-section
 ---
 headline: La nostra missione
-image: https://adapt.digital/wp-content/uploads/2020/02/Applications-Strip-Image.png
+image: security-certified.jpg
 ---
 Proteggere il digitale, difendere il futuro: la nostra impresa di cybersecurity è in una missione senza compromessi. Con l'avanzare della tecnologia, siamo determinati a tenere il passo con le minacce digitali, alzando il livello di sicurezza a livelli inimmaginabili
 ::
-
 
 ::swot-section
 ---
@@ -67,59 +65,48 @@ title: analisi swot
 gradient: green-to-blue
 ---
 #strengths
-Localizzazione aziendale strategica (non urbanizzata)
+La notevole **diversificazione** del portafoglio consente all'impresa di soddisfare le diverse esigenze dei clienti e di offrire soluzioni personalizzate
 
-Distanza dal caos cittadino
+Cyberwall gode di solide relazioni con i clienti, che le garantiscono **un'ottima reputazione**, cioè un vantaggio competitivo significativo
 
-Servizi di qualità
+La **tecnologia all'avanguardia**, così come un team di esperti **altamente qualificati** sono i punti di forza fondamentali per garantire la competitività
 
-Numero non troppo elevato di clienti selezionati, che permette di gestire le loro richieste in modo più accurato
-
-Personale qualificato
-
-Utilizzo di piattaforme dedicate
-
-Creazione per il cliente di software su misura
-
-Strategie di marketing innovative
-
-Investimenti su creatività e innovazione
+L'azienda gode di notevole **elasticità**: è in grado di adattarsi rapidamente alle nuove minacce informatiche e alle sfide emergenti
 
 #weaknesses
-Costi elevati: i servizi di cybersecurity possono richiedere un investimento significativo in termini di risorse finanziarie
+I servizi di cybersecurity possono richiedere **investimenti significativi** in termini di risorse finanziarie
 
-Scalabilità: L'espansione dell'impresa potrebbe essere limitata dalla necessità di mantenere elevati standard Assenza di clienti internazionali
- 
-Scarsa visibilità territoriale
+L'espansione dell'impresa potrebbe essere limitata dalla necessità di mantenere **elevati standard** 
+
+L'assenza di clienti internazionali limita l'impresa ad un contesto **territoriale**
+
+La cybersecurity è un settore in **continua evoluzione**, con nuove minacce e vulnerabilità che emergono costantemente. La dipendenza tecnologica è notevole
 
 #opportunities
-Crescita del mercato: Il mercato della cybersecurity è in continua espansione, con una domanda sempre crescente
+Il mercato della cybersecurity è in continua **espansione**, con una domanda sempre crescente
 
-Moderne legislazioni: le normative sulla privacy dei dati stanno diventando sempre più rigide in molti paesi. 
+Grazie alle **moderne legislazioni** le normative sulla privacy stanno diventando sempre più rigide in molti paesi 
 
-Numerosi incentivi statali, nazionali e territoriali.
+**Incentivi** statali, nazionali e territoriali sono frequenti
  
-Internet delle cose: L'IoT sta crescendo rapidamente e sempre più dispositivi sono connessi alla rete. Questa espansione aumenta anche i rischi di sicurezza informatica
+L'**IoT** sta crescendo rapidamente e sempre più dispositivi sono connessi alla rete. Questa espansione aumenta anche i rischi correlati alla sicurezza informatica
 
 #threats
-Continua evoluzione: l'impresa deve rimanere costantemente aggiornata sulle nuove minacce e investire nella ricerca e nello sviluppo
+L'impresa deve rimanere costantemente **aggiornata** sulle nuove minacce e investire in ricerca e sviluppo
 
-Reputazione: Il danno d'immagine è una minaccia significativa per un'impresa di cybersecurity, poiché può avere conseguenze gravi sulla fiducia dei clienti
+Il **danno d'immagine** è una minaccia significativa per un'impresa di cybersecurity, poiché può avere conseguenze gravi sulla fiducia dei clienti
 
-Competitors: Il settore della cybersecurity è altamente competitivo, con numerose altre aziende che offrono servizi simili
+Il settore della cybersecurity è **altamente competitivo**, con numerose altre aziende che offrono servizi simili
+
+Se i fornitori subissero violazioni o interruzioni del servizio, ciò comprometterebbe l'efficacia dell'impresa. La **dipendenza tecnologica di terze parti** richiede particolari attenzioni.
 ::
 
 ::duplex-gradient-section
+---
+heading: La visione
+---
 #left
-  :::text-gradient
-  ---
-  as: h3
-  unwrap: p
-  ---
-  La visione
-  :::
-
- Con il nostro impegno per l'eccellenza, la costante innovazione e il rispetto per tutti coloro che affidano a noi la loro sicurezza, miriamo a superare ogni aspettativa. Zero compromessi, protezione totale.
+Con il nostro impegno per l'eccellenza, la costante innovazione e il rispetto per tutti coloro che affidano a noi la loro sicurezza, miriamo a superare ogni aspettativa. Zero compromessi, protezione totale.
 
 #right
 Sicurezza fatta su misura per le tue esigenze

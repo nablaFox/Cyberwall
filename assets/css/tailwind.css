@@ -46,6 +46,7 @@
 
   .section {
     margin-top: var(--section-gap);
+    &:last-child { @apply mb-[110px] sm:mb-[150px] }
   }
 
   .veiled {
@@ -118,6 +119,18 @@
 
   .blue-to-purple {
     @apply bg-gradient-to-r from-blue-2 to-purple-2
+  }
+
+  .orange-to-purple {
+    @apply bg-gradient-to-r from-orange-3 to-purple-2
+  }
+
+  .blue-to-white {
+    @apply bg-gradient-to-r from-blue-2 to-white-1
+  }
+
+  .purple-to-blue {
+    @apply bg-gradient-to-r from-purple-1 to-blue
   }
 
   .underline {

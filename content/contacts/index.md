@@ -8,7 +8,8 @@ image-pos: 4
 ---
 
 ::contact-section
----
+--- 
+class: max-md:mt-14
 chat:
   title: un aiuto extra...
   cta: Inizia chat

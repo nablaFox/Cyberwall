@@ -8,7 +8,7 @@ cta:
 - text: Sopri di più
   link: /about-us
 - text: Le nostre soluzioni
-  link: /
+  link: /solutions
 ---
 
 Proteggiamo la tua azienda dalle minacce informatiche. Affidati alla nostra cybersecurity
@@ -17,22 +17,22 @@ Proteggiamo la tua azienda dalle minacce informatiche. Affidati alla nostra cybe
 ::solution-section
 ---
 solutions:
-- headline: Lorem ipsum dolor
-  name: Prima Solutione
-  image: cyberwall-app.jpg
+- headline: CyberShield
+  name: Gestione centralizzata 
+  image: woman-screens.png
 
-- headline: Lorem ipsum dolor
-  name: Seconda Soluzione
-  image: coding.jpg
+- headline: CyberWatch
+  name: Monitoraggio proattivo
+  image: security-team.gif
 
-- headline: Lorem ipsum dolor
-  name: Terza Soluzione
-  image: security-key.jpg
+- headline: Fortress Prime
+  name: Sicurezza senza compromessi
+  image: bouncer.png
   blob: bottom-right
 
 cta: 
   text: Vedi tutte
-  link: /
+  link: /solutions
 ---
 ::
 
@@ -69,7 +69,8 @@ services:
 ---
 title: '2018'
 heading: A partire da un piccolo team di sviluppatori...
-image: cyberwall-app.jpg
+image: study-desk.png
+class: mb-[140px]
 
 cta:
   text: Leggi di più
@@ -92,7 +93,7 @@ slides:
     link: /pcto/antonio
 
   - member: veronica coroneo
-    image: cyberwall-app.jpg
+    image: veronica.jpeg
     link: /pcto/veronica
 
   - member: moris di blasio
@@ -100,11 +101,11 @@ slides:
     link: /pcto/moris
 
   - member: tommaso giuliani
-    image: cyberwall-app.jpg
+    image: tommaso.jpg
     link: /pcto/tommaso
 
   - member: domenico taraschi
-    image: cyberwall-app.jpg
+    image: domenico.jpeg
     link: /pcto/domenico
 
   - member: ludovica dibattuto
@@ -115,8 +116,8 @@ slides:
     image: asia.jpeg
     link: /pcto/asia
 
-  - member: ester hisy
-    image: cyberwall-app.jpg
+  - member: ester hysi
+    image: ester.jpg
     link: /pcto/ester
 
   - member: leonardo planamente
