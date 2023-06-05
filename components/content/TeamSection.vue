@@ -33,7 +33,7 @@ const imageUrls = await Promise.all(
       >
         <swiper-slide
           v-for="slide, i in slides"
-          class="h-[500px] scale-90 bg-cover bg-no-repeat bg-center"
+          class="h-[500px] scale-90 bg-cover bg-no-repeat bg-center rounded-sm"
           :style="{ backgroundImage: `url(${imageUrls[i]})` }"
           :key="i"
         >
@@ -53,7 +53,7 @@ const imageUrls = await Promise.all(
 
 <style scoped lang="postcss">
 .swiper-slide-active {
-  @apply border-4 border-pink-1 sm:scale-100;
+  @apply border-2 border-purple-1 sm:scale-100;
   &:after { @apply bg-black/25 }
 }
 

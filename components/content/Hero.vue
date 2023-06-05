@@ -8,7 +8,7 @@ defineProps<{
 </script>
 
 <template>
-  <div class="min-h-[100vh] flex gap-12 flex-col items-center justify-center max-w-[1050px] m-auto px-10 sm:px-[90px] overflow-hidden z-[1]">
+  <div class="min-h-[100vh] flex gap-12 flex-col items-center justify-center max-w-[1050px] mx-auto px-10 sm:px-[90px] overflow-hidden z-[1]">
     <img 
       class="absolute -z-[1] min-w-[560px] opacity-50 object-contain"
       src="~/assets/images/curves-1.svg" 

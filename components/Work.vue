@@ -30,6 +30,7 @@ const assetMap = {
     class="work mx-auto py-[37px] px-[30px] rounded-2xl border-2 border-white-1 transition-[box-shadow] duration-500 overflow-hidden flex flex-col"
     @mouseleave="active = false"
     @mouseenter="active = true"
+    @click="active = true"
   >
     <div class="absolute w-full h-full overlay hidden max-[990px]:block left-0 top-0 z-10" />
     <div class="max-w-none md:max-w-[440px] z-20">
@@ -42,7 +43,7 @@ const assetMap = {
       </TextGradient>
       
       <p class="max-[990px]:mb-10 mt-[10px] text-lg sm:text-xl"> 
-        {{ description }}
+        <span v-html="description"></span>
       </p>
     </div>
 

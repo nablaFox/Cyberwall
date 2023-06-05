@@ -1,7 +1,7 @@
 <script setup lang="ts">
 defineProps<{
+  heading?: string
   gradient?: string
-  headline?: string
 }>()
 </script>
 
@@ -11,6 +11,9 @@ defineProps<{
       data-aos="fade-right" 
       class="max-lg:w-full max-lg:mt-[75px] max-lg:mx-auto text-center max-w-[445px] lg:mr-20 px-4"
     >
+      <TextGradient as="h3" :gradient="gradient" class="mb-3 text-2xl">
+        {{ heading }}
+      </TextGradient>
       <slot name="left" />
     </div>
 
@@ -31,10 +34,6 @@ defineProps<{
 </template>
 
 <style scoped lang="postcss">
-:deep(h3, h2, h1, h4, h5, h6) {
-  @apply mb-3 text-2xl;
-}
-
 :deep(.section-wrapper) {
   @apply flex flex-col-reverse mr-0 md:pl-10 lg:flex-row;
   max-width: var(--section-max-width)

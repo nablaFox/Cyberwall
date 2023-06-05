@@ -24,7 +24,7 @@ defineProps<{
 
     <Image
       v-if="activeImage"
-      class="active-image absolute opacity-0 bg-cover bg-center delay-150"
+      class="active-image absolute opacity-0 object-cover"
       :class="{ 'opacity-100': active }" 
       :src="activeImage"
     />
@@ -36,7 +36,7 @@ defineProps<{
 .shape,
 .active-shape,
 .active-image {
-  @apply transition-opacity ease-in-out duration-[400ms] delay-100
+  @apply transition-opacity ease-in duration-[400ms]
 }
 
 .active-shape,

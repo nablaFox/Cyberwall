@@ -9,7 +9,7 @@ withDefaults(defineProps<{
     class="flex flex-col sm:flex-row max-w-[975px]"
     :class="centered && 'mx-auto'"
   >
-    <div class="left w-full sm:pr-5 sm:w-1/2">
+    <div class="left w-full sm:pr-8 sm:w-1/2">
       <slot name="left" />
     </div>
     <div class="right w-full sm:w-1/2">

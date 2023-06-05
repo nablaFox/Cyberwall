@@ -19,7 +19,7 @@ defineProps<Solution>()
   >
     <Image
       :src="image"
-      class="background object-cover absolute w-full h-full"
+      class="background object-cover absolute w-full h-full rounded-md"
     />
     <img 
       src="~/assets/images/blob.svg" 

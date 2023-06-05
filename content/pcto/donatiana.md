@@ -12,9 +12,9 @@ Certificazione ICDL IT-Security conseguita il 14/06/2022 MODULO «Digital Smartn
 
 ## L'impresa formativa simulata
 
-- [Questionario](https://drive.google.com/file/d/1kCi594JBm5nkTUV-2PC-O47iQ-2EWpje/view?usp=drive_link){.font-semibold}
-- [Analisi Swot](https://drive.google.com/file/d/1WIiChoF_1kqncg1pUjn6p6UxJlIc6HgF/view?usp=drive_link){.font-semibold}
-- [Curriculum Vitae In Inglese](https://drive.google.com/file/d/1iYV6XUiJFOuIXXmDV7lZ8ouzf4rtooYv/view?usp=drive_link){.font-bold}
+- [**Questionario**](https://drive.google.com/file/d/1kCi594JBm5nkTUV-2PC-O47iQ-2EWpje/view?usp=drive_link)
+- [**Analisi Swot**](https://drive.google.com/file/d/1WIiChoF_1kqncg1pUjn6p6UxJlIc6HgF/view?usp=drive_link)
+- [**Curriculum Vitae In Inglese**](https://drive.google.com/file/d/1iYV6XUiJFOuIXXmDV7lZ8ouzf4rtooYv/view?usp=drive_link)
 
 ## Competenze tecniche sviluppate
 

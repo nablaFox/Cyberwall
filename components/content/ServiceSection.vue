@@ -7,7 +7,7 @@ defineProps<{
 </script>
 
 <template>
-  <PageSection>
+  <PageSection class="pt-6">
     <Service
       v-for="service in services"
       v-bind="service" 
@@ -18,6 +18,8 @@ defineProps<{
 
 <style scoped lang="postcss">
 :deep(.service) { @apply mt-[75px] mb-[120px] }
+
+:deep(.title) { @apply mb-[120px] }
 
 :deep(.section-wrapper) {
   @apply flex flex-wrap justify-between items-center max-w-[1040px] mx-auto pt-5

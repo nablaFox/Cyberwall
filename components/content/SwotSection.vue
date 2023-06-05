@@ -11,7 +11,7 @@ const { width } = useWindowSize()
 function Slide(props: any, { slots }: { slots: any }) {
   return (
     <swiper-slide>
-      <div class="max-w-[550px] mx-auto flex flex-col items-center gap-5 text-center pb-14">
+      <div class="max-sm:px-1 max-lg:pb-12 max-w-[500px] mx-auto flex flex-col items-center gap-5 text-center">
         <div>
           <props.icon />
           <h4 class="my-4 font-bold capitalize text-2xl"> 
@@ -28,7 +28,7 @@ function Slide(props: any, { slots }: { slots: any }) {
 
 <template>
 
-  <PageSection class="pb-24" :compact="width > 950">
+  <PageSection :compact="width > 950">
     <template #before>
       <img 
         class="absolute top-[-300px] left-[-100px] md:left-0 lg:top-0"
@@ -75,5 +75,9 @@ function Slide(props: any, { slots }: { slots: any }) {
 
 :deep(p) {
   @apply my-2;
+}
+
+:deep(strong) {
+  @apply font-semibold text-white;
 }
 </style>

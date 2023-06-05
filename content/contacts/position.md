@@ -6,11 +6,8 @@ image: blob-6.png
 image-pos: 1
 ---
 
-:::mapbox
----
-class: mt-14
----
-:::
+::mapbox-section
+::
 
 ::page-section
 ---

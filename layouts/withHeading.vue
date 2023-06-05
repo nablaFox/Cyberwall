@@ -13,17 +13,15 @@ const { page } = useContent()
         />
       </template>
 
-      <div class="pt-[160px]">
-        <TextGradient
-          as="h1"
-          class="font-bold leading-[1.15] text-center capitalize mb-6 text-[45px] md:text-[70px] xl:text-[95px] break-words"
-          data-aos="fade-up"
-          :gradient="page?.gradient || 'blue-to-pink'"
-        >
-          <span class="default"> {{ page?.heading }} </span> <br />
-          {{ page?.subheading }}
-        </TextGradient>
-      </div>
+      <TextGradient
+        as="h1"
+        class="font-bold leading-[1.15] text-center capitalize text-[45px] md:text-[70px] xl:text-[95px] break-words mb-6 pt-[160px]"
+        data-aos="fade-up"
+        :gradient="page?.gradient || 'blue-to-pink'"
+      >
+        <span class="default"> {{ page?.heading }} </span> <br />
+        {{ page?.subheading }}
+      </TextGradient>
     </PageSection>
     
     <slot />

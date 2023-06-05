@@ -64,18 +64,18 @@ defineProps<{
 }
 
 .layer-1 {
-  transform: translate3d(0px, -18.4917%, 0px) scale3d(1, 1, 1) rotateX(0deg) rotateY(0deg) rotateZ(0deg) skew(0deg, 0deg);
+  transform: translate3d(0px, -18.4917%, 0px);
 
   &.active {
-    transform: translate3d(0px, -14.044%, 0px) scale3d(1, 1, 1) rotateX(0deg) rotateY(0deg) rotateZ(0deg) skew(0deg, 0deg);
+    transform: translate3d(0px, -14.044%, 0px);
   }
 }
 
 .screen {
-  transform: translate3d(0px, -4.1765%, 0px) scale3d(1, 1, 1) rotateX(0deg) rotateY(0deg) rotateZ(0deg) skew(0deg, 0deg);
+  transform: translate3d(0px, -4.1765%, 0px);
   
   &.active {
-    transform: translate3d(0px, -2.3456%, 0px) scale3d(1, 1, 1) rotateX(0deg) rotateY(0deg) rotateZ(0deg) skew(0deg, 0deg);
+    transform: translate3d(0px, -2.3456%, 0px);
   }
 }
 </style>

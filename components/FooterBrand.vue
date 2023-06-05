@@ -7,7 +7,7 @@ defineProps<{
 </script>
 
 <template>
-  <div class="mb-10"> 
+  <div class="mb-4"> 
     <div class="flex items-center mb-6">
       <Image
         v-if="logo"

@@ -18,7 +18,6 @@ const addUnderlines = () => {
   const gradient = page.value.gradient
 
   h2s.forEach((h2) => {
-    console.log('flag')
     const span = document.createElement('span')
     span.classList.add(gradient)
     h2.appendChild(span)
@@ -59,6 +58,7 @@ onMounted(addUnderlines)
 
     <DuplexSection
       v-if="page?.image"
+      class="!mt-12"
       :image="page.image"
       :gradient="page.gradient"
       :headline="page.imageHeadline" 
@@ -81,4 +81,6 @@ h2 {
 
 p,
 ul { @apply mt-4 }
+
+strong { @apply font-semibold }
 </style>
