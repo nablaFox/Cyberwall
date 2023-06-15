@@ -3,10 +3,14 @@ export interface MessageProps {
   role: string
   content?: string
   botIcon?: string
+  botName?: string
+  userName?: string
 }
 
 const props = withDefaults(defineProps<MessageProps>(), {
   botIcon: 'octicon:copilot-24',
+  botName: 'Bot',
+  userName: 'Tu'
 })
 
 const isBot = computed(() => props?.role === 'assistant')
@@ -24,7 +28,7 @@ const isBot = computed(() => props?.role === 'assistant')
       </span>
 
       <span class="font-bold"> 
-        {{ isBot ? 'Cyberwall' : 'Tu' }}
+        {{ isBot ? botName : userName }}
       </span>
     </div>
 
@@ -35,7 +39,7 @@ const isBot = computed(() => props?.role === 'assistant')
 
 <style lang="postcss" scoped>
 .user { 
-  @apply self-end p-3 sm:px-5 sm:py-4;
+  @apply self-end p-[10px] sm:px-4 sm:py-2;
   & > div { @apply mb-1 }
 }
 
