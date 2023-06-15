@@ -133,6 +133,10 @@
     @apply bg-gradient-to-r from-purple-1 to-blue
   }
 
+  .orange-to-pink {
+    @apply bg-gradient-to-r from-orange-3 to-pink-3;
+  }
+
   .underline {
     @apply absolute rounded-2xl h-[3px] bottom-[-3px] left-0 w-full
   }
